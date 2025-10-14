@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-7xl min-h-screen mx-auto overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  min-h-screen mx-auto overflow-x-hidden`}
       >
         <Navigation />
         {children}

@@ -2,14 +2,14 @@
 
 import { motion } from "motion/react";
 import {
-  ArrowRight,
-  DollarSign,
-  Shield,
-  Building2,
-  Monitor,
-  FileCheck,
-  Search,
-  PenTool,
+  // ArrowRight,
+  // DollarSign,
+  // Shield,
+  // Building2,
+  // Monitor,
+  // FileCheck,
+  // Search,
+  // PenTool,
   Download,
   Eye,
   CheckCircle2,
@@ -24,6 +24,7 @@ import { TrustBar } from "@/components/TrustBar";
 import { ProblemPromise } from "@/components/ProblemPromise";
 import HowToInvest from "@/components/HowItWorks";
 import { Card } from "@/components/ui/card";
+import Properties from "@/components/Properties";
 
 // How It Works Section
 // const HowItWorks = () => {
@@ -112,7 +113,7 @@ const FeaturedOffering = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#f8fafb]">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -209,7 +210,7 @@ const WhyInvest = () => {
   ];
 
   return (
-    <section id="for-physicians" className="py-20 bg-[#f8fafb]">
+    <section id="for-physicians" className="py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -285,6 +286,7 @@ export default function Home() {
       <TrustBar />
       <ProblemPromise />
       <HowToInvest />
+      <Properties />
       <FeaturedOffering />
       <WhyInvest />
       <Testimonials />

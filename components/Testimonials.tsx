@@ -6,27 +6,27 @@ import { Avatar, AvatarFallback } from "./ui/avatar";
 export const Testimonials = () => {
   const testimonials = [
     {
-      text: "Finally, a real estate platform that understands my schedule. The 12-minute deal summaries are perfect, and the tax benefits have been significant for my practice.",
-      author: "Dr. James K.",
+      text: "Clear, timely updates and real passive income—exactly what I needed after selling my practice.",
+      author: "M.D.",
       title: "Orthopedic Surgeon, TX",
-      initials: "JK",
+      initials: "MD",
     },
     {
       text: "The transparency is unmatched. I know exactly what I own, receive detailed quarterly reports, and the team is always available for questions.",
-      author: "Dr. Sarah M.",
+      author: "Fellow",
       title: "Anesthesiologist, CA",
-      initials: "SM",
+      initials: "F",
     },
     {
-      text: "Three investments in two years, all performing above projections. The conservative approach gives me confidence during uncertain times.",
-      author: "Dr. Robert T.",
+      text: "Professional, conservative, and aligned with our interests.",
+      author: " D.D.S.",
       title: "Practice Owner, FL",
-      initials: "RT",
+      initials: "DD",
     },
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#f8fafb]">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

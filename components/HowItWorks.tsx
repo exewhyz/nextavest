@@ -5,15 +5,17 @@ import Image from "next/image";
 
 export default function HowToInvest() {
   return (
-    <section className="w-full bg-[#f7f8fa] py-16 px-6 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-12">
-      {/* Left Section */}
-      <motion.div
-        className="flex-1 max-w-xl"
-        initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
+    <section className="w-full bg-[#f7f8fa] py-16 lg:py-24">
+      <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+          {/* Left Section */}
+          <motion.div
+            className="flex-1 max-w-xl"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
         <h2 className="text-4xl lg:text-5xl font-bold text-[#0a0a0a] mb-10">
           How to Invest
         </h2>
@@ -85,25 +87,27 @@ export default function HowToInvest() {
         </motion.button>
       </motion.div>
 
-      {/* Right Section - Image */}
-      <motion.div
-        className="flex-1"
-        initial={{ opacity: 0, x: 40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <div className="overflow-hidden rounded-3xl shadow-lg">
-          <Image
-            src="/images/how-to-invest.jpg" // <-- replace with actual image path
-            alt="Apartment Building"
-            width={800}
-            height={600}
-            className="w-full h-auto object-cover"
-            priority
-          />
+          {/* Right Section - Image */}
+          <motion.div
+            className="flex-1 max-w-xl"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="overflow-hidden rounded-3xl shadow-lg bg-gradient-to-br from-[#0a2540] to-[#1a5490]">
+              <Image
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&q=80"
+                alt="Modern Investment Property - Professional Real Estate for Physicians"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

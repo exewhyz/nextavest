@@ -75,7 +75,7 @@ export const ProblemPromise = () => {
     //     </div>
     //   </div>
     // </section>
-    <section className="flex flex-col gap-8 container mx-auto px-4 lg:px-8 py-12 ">
+    <section className="flex flex-col gap-8 container mx-auto px-4 lg:px-8 py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -84,27 +84,39 @@ export const ProblemPromise = () => {
         className="text-center"
       >
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0a2540]">
-          PROBLEM → PROMISE
+          Built for Medical Professionals
         </h2>
         <p className="text-xl text-[#425466]">
-          Empathize + Promise immediate benefits.
+          Understanding your challenges. Delivering real solutions.
         </p>
       </motion.div>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="bg-gray-100 p-8 rounded-2xl backdrop-blur-md border border-black/8"
+          className="bg-gradient-to-br from-[#f8fafb] to-white p-8 rounded-2xl shadow-lg border border-gray-200"
         >
-          <h2 className="text-2xl font-semibold mb-4">
-            You Heal Patients. We Help Build Predictable Income.
-          </h2>
-          <ul className="list-disc pl-6 text-black/50 space-y-2">
-            <li>Limited time outside clinical duties</li>
-            <li>Rising taxes and complex planning for high W-2 income</li>
-            <li>Burnout and the uncertainty of markets</li>
-            <li>Lack of reliable, passive post-practice income</li>
+          <h3 className="text-2xl font-bold mb-6 text-[#0a2540]">
+            The Challenges You Face
+          </h3>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full bg-[#1a5490] mt-2 flex-shrink-0" />
+              <span className="text-[#425466] leading-relaxed">Limited time outside clinical duties</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full bg-[#1a5490] mt-2 flex-shrink-0" />
+              <span className="text-[#425466] leading-relaxed">Rising taxes and complex planning for high W-2 income</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full bg-[#1a5490] mt-2 flex-shrink-0" />
+              <span className="text-[#425466] leading-relaxed">Burnout and the uncertainty of markets</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="w-2 h-2 rounded-full bg-[#1a5490] mt-2 flex-shrink-0" />
+              <span className="text-[#425466] leading-relaxed">Lack of reliable, passive post-practice income</span>
+            </li>
           </ul>
         </motion.div>
 
@@ -116,35 +128,39 @@ export const ProblemPromise = () => {
         >
           {[
             {
-              icon: <ShieldCheck className="w-6 h-6 text-orange-400" />,
-              title: "Passive cash flow",
+              icon: <ShieldCheck className="w-6 h-6 text-[#1a5490]" />,
+              title: "Passive Cash Flow",
               body: "Professionally managed assets.",
             },
             {
-              icon: <ChartBar className="w-6 h-6 text-orange-400" />,
-              title: "Tax advantages",
+              icon: <ChartBar className="w-6 h-6 text-[#1a5490]" />,
+              title: "Tax Advantages",
               body: "Bonus depreciation, cost segregation.",
             },
             {
-              icon: <FileText className="w-6 h-6 text-orange-400" />,
-              title: "Direct ownership",
+              icon: <FileText className="w-6 h-6 text-[#1a5490]" />,
+              title: "Direct Ownership",
               body: "Deal-by-deal — no blind funds.",
             },
             {
-              icon: <Clock className="w-6 h-6 text-orange-400" />,
-              title: "Transparent updates",
+              icon: <Clock className="w-6 h-6 text-[#1a5490]" />,
+              title: "Transparent Updates",
               body: "Secure investor portal.",
             },
           ].map((it, i) => (
             <motion.div
               key={i}
-              whileHover={{ scale: 1.025 }}
-              className="flex gap-4 items-start bg-white/6 p-4 rounded-xl backdrop-blur-md border border-black/8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+              className="flex flex-col gap-3 items-start bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
-              <div className="p-2 rounded-lg bg-white/8">{it.icon}</div>
+              <div className="p-3 rounded-lg bg-gradient-to-br from-[#e6f0fa] to-white shadow-sm">{it.icon}</div>
               <div>
-                <div className="font-medium">{it.title}</div>
-                <div className="text-sm text-black/50">{it.body}</div>
+                <div className="font-bold text-[#0a2540] mb-1">{it.title}</div>
+                <div className="text-sm text-[#425466]">{it.body}</div>
               </div>
             </motion.div>
           ))}

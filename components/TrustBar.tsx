@@ -58,7 +58,7 @@ export const TrustedBy = () => {
       >
         Trusted by
       </motion.p>
-      <div className="flex flex-wrap justify-center gap-8 md:gap-8">
+      <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 md:gap-x-8 md:gap-y-0">
         {specialties.map((specialty, i) => (
           <motion.li
             key={specialty}

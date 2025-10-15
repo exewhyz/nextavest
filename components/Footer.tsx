@@ -7,7 +7,7 @@ import { Mail, Phone } from "lucide-react";
 export default function Footer() {
   const sitePages = [
     { label: "About Us", href: "/about-us" },
-    { label: "Team", href: "/team" },
+    { label: "Team", href: "/teams" },
     { label: "Q&A", href: "/faq" },
     { label: "Terms & Conditions", href: "/terms" },
     { label: "Privacy Policy", href: "/privacy" },

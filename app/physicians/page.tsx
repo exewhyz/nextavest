@@ -1,31 +1,3 @@
-// "use client";
-
-// import { ForPhysicians } from "@/components/ForPhysicians";
-// import { HowItWorksDetailed } from "@/components/HowItWorksDetailed";
-// import { DealCriteriaAndRisk } from "@/components/DealCriteriaAndRisk";
-// import { AboutFamily } from "@/components/AboutFamily";
-// import { FAQSection } from "@/components/FAQSection";
-// import { CaseStudies } from "@/components/CaseStudies";
-// import { CurrentOfferings } from "@/components/CurrentOfferings";
-// import { EducationHub } from "@/components/EducationHub";
-// // import { ComplianceFooter } from "@/components/ComplianceFooter";
-
-// export default function PhysiciansPage() {
-//   return (
-//     <main className="bg-white">
-//       <ForPhysicians />
-//       <HowItWorksDetailed />
-//       <DealCriteriaAndRisk />
-//       <CurrentOfferings />
-//       <CaseStudies />
-//       <EducationHub />
-//       <AboutFamily />
-//       <FAQSection />
-//       {/* <ComplianceFooter /> */}
-//     </main>
-//   );
-// }
-
 "use client";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -1152,7 +1124,6 @@ export default function PhysiciansPage() {
       <CaseStudies />
       <EducationHub />
       <AboutFamily />
-      <FAQSection />
     </main>
   );
 }

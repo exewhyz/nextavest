@@ -48,8 +48,8 @@ export const TrustedBy = () => {
     "Hospitalists",
   ];
   return (
-    <ul className="flex flex-col gap-2">
-      <motion.p
+    <ul className="flex flex-col gap-2 mt-8">
+      {/* <motion.p
         className="text-center text-[#425466] text-xs font-medium"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export const TrustedBy = () => {
         viewport={{ once: true }}
       >
         Trusted by
-      </motion.p>
+      </motion.p> */}
       <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 md:gap-x-8 md:gap-y-0">
         {specialties.map((specialty, i) => (
           <motion.li
@@ -66,7 +66,7 @@ export const TrustedBy = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1 }}
             viewport={{ once: true }}
-            className="text-[#425466] text-xs list-disc"
+            className="text-white text-sm list-disc"
           >
             {specialty}
           </motion.li>

@@ -13,6 +13,7 @@ import {
   Target,
   Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutPage() {
   const values = [
@@ -47,7 +48,7 @@ export default function AboutPage() {
           <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -99,7 +100,7 @@ export default function AboutPage() {
                 />
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -143,7 +144,7 @@ export default function AboutPage() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto"></div>
           </motion.div>
-          
+
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {values.map((value, i) => (
               <motion.div
@@ -156,7 +157,9 @@ export default function AboutPage() {
                 className="group"
               >
                 <div className="relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 h-full border border-slate-100">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${value.gradient} flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${value.gradient} flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}
+                  >
                     {value.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-4">
@@ -165,7 +168,9 @@ export default function AboutPage() {
                   <p className="text-slate-600 leading-relaxed">
                     {value.description}
                   </p>
-                  <div className={`h-1 w-0 group-hover:w-full bg-gradient-to-r ${value.gradient} transition-all duration-500 mt-6`}></div>
+                  <div
+                    className={`h-1 w-0 group-hover:w-full bg-gradient-to-r ${value.gradient} transition-all duration-500 mt-6`}
+                  ></div>
                 </div>
               </motion.div>
             ))}
@@ -200,7 +205,7 @@ export default function AboutPage() {
                 potential for above-market returns.
               </p>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -240,12 +245,13 @@ export default function AboutPage() {
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8"></div>
               <p className="text-2xl text-slate-700 font-semibold">
-                NextaVest was built for medical professionals seeking predictable cash flow.
+                NextaVest was built for medical professionals seeking
+                predictable cash flow.
               </p>
             </div>
-            
+
             <div className="space-y-8">
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
@@ -256,8 +262,8 @@ export default function AboutPage() {
                 doctors under Meridian Health. What we saw again and again was
                 the same problem:
               </motion.p>
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.4 }}
@@ -269,13 +275,14 @@ export default function AboutPage() {
                   <div className="flex items-start gap-4">
                     <ArrowRight className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
                     <p className="text-xl font-semibold text-slate-900">
-                      After retirement or selling their practice, income stopped.
+                      After retirement or selling their practice, income
+                      stopped.
                     </p>
                   </div>
                 </div>
               </motion.div>
-              
-              <motion.p 
+
+              <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
@@ -286,7 +293,7 @@ export default function AboutPage() {
                 careers serving patients, were left without reliable income
                 streams once they stepped away from medicine.
               </motion.p>
-              
+
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -297,8 +304,11 @@ export default function AboutPage() {
                 <p className="text-lg text-slate-700 leading-relaxed font-medium">
                   Now, through NextaVest, we're helping doctors turn their
                   hard-earned capital into quarterly or monthly distributions —
-                  often making <span className="text-emerald-700 font-bold">double what they earned while practicing medicine</span> —
-                  without having to lift a finger.
+                  often making{" "}
+                  <span className="text-emerald-700 font-bold">
+                    double what they earned while practicing medicine
+                  </span>{" "}
+                  — without having to lift a finger.
                 </p>
               </motion.div>
             </div>
@@ -313,7 +323,7 @@ export default function AboutPage() {
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-300 rounded-full mix-blend-overlay filter blur-3xl animate-pulse delay-1000"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -332,27 +342,28 @@ export default function AboutPage() {
               <Sparkles className="w-4 h-4" />
               Join The Movement
             </motion.div>
-            
+
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Ready to Build Your Financial Future?
             </h2>
             <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-              Join physicians nationwide who are creating passive income streams with NextaVest
+              Join physicians nationwide who are creating passive income streams
+              with NextaVest
             </p>
-            
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
+                asChild
                 className="bg-white text-blue-700 hover:bg-blue-50 text-lg px-10 py-7 rounded-full font-bold shadow-2xl hover:shadow-white/20 transition-all duration-300 group"
               >
-                Join The Investor List
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <Link href="/contact">
+                  Join The Investor List
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
             </motion.div>
-            
+
             <p className="text-blue-200 text-sm mt-6">
               No commitment required • Exclusive opportunities
             </p>

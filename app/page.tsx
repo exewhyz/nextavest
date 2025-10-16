@@ -25,6 +25,7 @@ import { ProblemPromise } from "@/components/ProblemPromise";
 import HowToInvest from "@/components/HowItWorks";
 import { Card } from "@/components/ui/card";
 import Properties from "@/components/Properties";
+import Link from "next/link";
 
 // How It Works Section
 // const HowItWorks = () => {
@@ -270,8 +271,11 @@ const CTASection = () => (
         <p className="text-xl text-gray-200 mb-8">
           Start your journey to financial freedom outside the OR
         </p>
-        <Button className="bg-primary-orange-700 hover:bg-primary-orange-800 text-white">
-          Join The Investor List
+        <Button
+          className="bg-primary-orange-700 hover:bg-primary-orange-800 text-white/90 hover:text-white"
+          variant={"outline"}
+        >
+          <Link href="/contact">Join The Investor List</Link>
         </Button>
       </motion.div>
     </div>

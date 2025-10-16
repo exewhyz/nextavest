@@ -97,7 +97,7 @@ export default function TeamsPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
+      {/* <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-600 to-blue-800 opacity-95"></div>
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-10 md:top-20 -right-10 md:right-20 w-48 md:w-96 h-48 md:h-96 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl"></div>
@@ -130,7 +130,7 @@ export default function TeamsPage() {
             </p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Origin Story Section */}
       <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden">

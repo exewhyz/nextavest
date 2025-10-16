@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HowToInvest() {
   return (
@@ -83,7 +84,7 @@ export default function HowToInvest() {
           whileTap={{ scale: 0.97 }}
           className="mt-10 bg-[#007b91] text-white font-semibold px-8 py-3 rounded-full shadow-md"
         >
-          Get Started
+          <Link href="/contact">Get Started</Link>
         </motion.button>
       </motion.div>
 

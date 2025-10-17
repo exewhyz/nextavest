@@ -84,7 +84,7 @@ export default function Properties() {
   //   const hasActiveDeals = properties.length > 0;
 
   return (
-    <main className="min-h-screen bg-[#f8fafb]">
+    <section className="min-h-screen bg-[#f8fafb] border border-b">
       {/* Hero Section */}
       {/* <section className="relative py-24 bg-gradient-to-br from-[#0a2540] to-[#1a5490] text-white">
         <div className="container mx-auto px-4 lg:px-8">
@@ -234,6 +234,6 @@ export default function Properties() {
           )}
         </div>
       </section> */}
-    </main>
+    </section>
   );
 }

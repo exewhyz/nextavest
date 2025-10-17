@@ -26,7 +26,7 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#f8fafb]">
+    <section className="py-20 bg-[#f8fafb] border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

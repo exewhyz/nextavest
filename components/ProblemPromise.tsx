@@ -75,7 +75,7 @@ export const ProblemPromise = () => {
     //     </div>
     //   </div>
     // </section>
-    <section className="flex flex-col gap-8 container mx-auto px-4 lg:px-8 py-20">
+    <section className="flex flex-col gap-8 container mx-auto px-4 lg:px-8 py-20 border border-b">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

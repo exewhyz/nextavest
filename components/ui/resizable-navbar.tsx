@@ -76,7 +76,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
         duration: 0.3,
         ease: "easeInOut",
       }}
-      className={cn("fixed inset-x-0 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 z-40 w-full ", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)

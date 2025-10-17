@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+/* Lines 2-36 omitted */
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -69,7 +71,7 @@ function ForPhysicians() {
   ];
 
   return (
-    <section className="relative py-32 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white">
+    <section className="relative py-32 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white border border-b">
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 right-20 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
         <div
@@ -241,7 +243,7 @@ function HowItWorksDetailed() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-32 bg-gradient-to-b from-white to-slate-50 border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -379,7 +381,7 @@ function DealCriteriaAndRisk() {
   ];
 
   return (
-    <section className="py-32 bg-white">
+    <section className="py-32 bg-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -475,7 +477,7 @@ function CurrentOfferings() {
   const hasLiveOfferings = liveOfferings.length > 0;
 
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-50 to-white">
+    <section className="py-32 bg-gradient-to-b from-slate-50 to-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -597,7 +599,7 @@ function CaseStudies() {
   ];
 
   return (
-    <section className="py-32 bg-white">
+    <section className="py-32 bg-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -705,6 +707,7 @@ function CaseStudies() {
 
 // EducationHub Component
 function EducationHub() {
+
   const physicianGuides = [
     {
       title: "Bonus Depreciation 101 For Doctors",
@@ -782,7 +785,7 @@ function EducationHub() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-50 to-white">
+    <section className="py-32 bg-gradient-to-b from-slate-50 to-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -940,7 +943,7 @@ function AboutFamily() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-32 bg-gradient-to-b from-white to-slate-50 border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -956,7 +959,13 @@ function AboutFamily() {
           <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-600"></div>
             <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold">
-              Family Image
+              <Image
+                src="/medical.jpg"
+                alt="Medical family legacy"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
 
@@ -1074,7 +1083,7 @@ function FAQSection() {
   ];
 
   return (
-    <section className="py-32 bg-white">
+    <section className="py-32 bg-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">

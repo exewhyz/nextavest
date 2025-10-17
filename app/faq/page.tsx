@@ -3,8 +3,8 @@ import { FAQSection } from "@/components/FAQSection";
 
 export default function page() {
   return (
-    <>
+    <main>
       <FAQSection />
-    </>
+    </main>
   );
 }

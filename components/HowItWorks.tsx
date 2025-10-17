@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HowToInvest() {
   return (
-    <section className="w-full bg-[#f7f8fa] py-16 lg:py-24">
+    <section className="w-full bg-[#f7f8fa] py-16 lg:py-24 border border-b">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           {/* Left Section */}
@@ -98,7 +98,7 @@ export default function HowToInvest() {
           >
             <div className="overflow-hidden rounded-3xl shadow-lg bg-gradient-to-br from-[#0a2540] to-[#1a5490]">
               <Image
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&q=80"
+                src="/Home.jpg"
                 alt="Modern Investment Property - Professional Real Estate for Physicians"
                 width={800}
                 height={600}

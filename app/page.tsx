@@ -114,7 +114,7 @@ const FeaturedOffering = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#f8fafb]">
+    <section className="py-20 bg-[#f8fafb] border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -211,7 +211,7 @@ const WhyInvest = () => {
   ];
 
   return (
-    <section id="for-physicians" className="py-20 bg-white">
+    <section id="for-physicians" className="py-20 bg-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -255,7 +255,7 @@ const WhyInvest = () => {
 
 // CTA Section
 const CTASection = () => (
-  <section className="py-20 bg-gradient-to-br from-[#0a2540] to-[#1a5490] relative overflow-hidden">
+  <section className="py-20 bg-gradient-to-br from-[#0a2540] to-[#1a5490] relative overflow-hidden border border-b">
     <BackgroundBeams />
     <div className="container mx-auto px-4 lg:px-8 relative z-10">
       <motion.div

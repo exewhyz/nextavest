@@ -133,7 +133,7 @@ export default function TeamsPage() {
       </section> */}
 
       {/* Origin Story Section */}
-      <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden border border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
             <motion.div
@@ -192,7 +192,7 @@ export default function TeamsPage() {
       </section>
 
       {/* The Problem Section */}
-      <section className="pt-16 md:pt-24 lg:pt-32 bg-white">
+      <section className="pt-16 md:pt-24 lg:pt-32 bg-white border border-b pb-24">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -258,7 +258,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Founders Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white to-slate-50">
+      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -323,7 +323,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Team Members Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white">
+      <section className="py-16 md:py-24 lg:py-32 bg-white border border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -387,7 +387,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white">
+      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -431,7 +431,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Mission Continuation Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-16 md:py-24 lg:py-32 bg-white border border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -471,7 +471,7 @@ export default function TeamsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-blue-700 via-cyan-700 to-blue-900 relative overflow-hidden">
+      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-blue-700 via-cyan-700 to-blue-900 relative overflow-hidden border border-b">
         <div className="absolute inset-0">
           <div className="absolute top-10 md:top-20 right-10 md:right-20 w-48 md:w-96 h-48 md:h-96 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl"></div>
           <div className="absolute bottom-10 md:bottom-20 left-10 md:left-20 w-48 md:w-96 h-48 md:h-96 bg-cyan-400/20 rounded-full mix-blend-overlay filter blur-3xl"></div>

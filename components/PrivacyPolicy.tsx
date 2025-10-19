@@ -40,6 +40,7 @@ export default function PrivacyPolicyPage() {
       icon: <Eye className="h-6 w-6 text-blue-600" />,
       content: [
         {
+          subtitle:"",
           text: "The Company may use Personal Data for the following purposes:",
           list: [
             "To provide and maintain our Service",
@@ -58,6 +59,7 @@ export default function PrivacyPolicyPage() {
       icon: <Lock className="h-6 w-6 text-blue-600" />,
       content: [
         {
+          subtitle:"",
           text: "We do not sell or rent your personal information to third parties. However, we may share your information with:",
           list: [
             "Service Providers: Trusted third parties that help us operate our business",

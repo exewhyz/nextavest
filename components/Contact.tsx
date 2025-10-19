@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const NextavestForm = () => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://links.nextavest.com/js/form_embed.js";
+    script.src = "https://link.nextavest.com/js/form_embed.js";
     script.async = true;
     document.body.appendChild(script);
 
@@ -21,7 +21,7 @@ const NextavestForm = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-slate-50">
       {/* Form Section */}
-      <section className="py-20 bg-[#f8fafb]">
+      <section className="py-20 bg-[#f8fafb] border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -47,9 +47,9 @@ const NextavestForm = () => {
             className="max-w-4xl mx-auto pt-2"
           >
             <iframe
-              src="https://links.nextavest.com/widget/form/z8H2OhXwLW7WyRTOu4mJ"
-              className="w-full h-[514px] border-none rounded-lg"
-              id="inline-z8H2OhXwLW7WyRTOu4mJ"
+              src="https://link.nextavest.com/widget/form/S7R6jwyYVu3GcZxuon85"
+              style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
+              id="inline-S7R6jwyYVu3GcZxuon85"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
               data-trigger-value=""
@@ -57,11 +57,12 @@ const NextavestForm = () => {
               data-activation-value=""
               data-deactivation-type="neverDeactivate"
               data-deactivation-value=""
-              data-form-name="Form 20"
-              data-height="514"
-              data-layout-iframe-id="inline-z8H2OhXwLW7WyRTOu4mJ"
-              data-form-id="z8H2OhXwLW7WyRTOu4mJ"
-              title="Form 20"
+              data-form-name="NEXTAVEST SITE FORM"
+              data-height="undefined"
+              data-layout-iframe-id="inline-S7R6jwyYVu3GcZxuon85"
+              data-form-id="S7R6jwyYVu3GcZxuon85"
+              title="NEXTAVEST SITE FORM"
+              className="min-h-[600px] rounded-lg"
             ></iframe>
           </motion.div>
         </div>
@@ -78,7 +79,7 @@ export default NextavestForm;
 // Disclaimer Section
 export function Disclaimer() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-20 bg-gradient-to-b from-white to-slate-50 border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

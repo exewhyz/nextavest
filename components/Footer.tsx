@@ -30,7 +30,7 @@ export default function Footer() {
               NextaVest
             </h3>
             <p className=" leading-relaxed w-3/4">
-              Crowdvest LLC is a commercial real estate investment firm that
+              Nextavest is a commercial real estate investment firm that
               focuses on driving value for our investors through strategic
               investments in the industry. We leverage decades of experience,
               creative solutions, and solid relationships to find high-return
@@ -71,18 +71,18 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Contact Details</h3>
             <div className="space-y-4">
               <a
-                href="tel:16316146138"
+                href="tel:15162173673"
                 className="flex items-center gap-3  hover:text-[#FF9633] transition-colors duration-200"
               >
                 <Phone className="h-5 w-5" />
-                <span>1 (631) 614-6138</span>
+                <span>1 (516) 217-3673</span>
               </a>
               <a
-                href="mailto:invest@crowdvestllc.com"
+                href="mailto:info@nextavest.com"
                 className="flex items-center gap-3  hover:text-[#FF9633] transition-colors duration-200"
               >
                 <Mail className="h-5 w-5" />
-                <span>invest@crowdvestllc.com</span>
+                <span>info@nextavest.com</span>
               </a>
             </div>
           </motion.div>

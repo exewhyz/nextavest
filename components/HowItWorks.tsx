@@ -96,7 +96,7 @@ export default function HowToInvest() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="overflow-hidden rounded-3xl shadow-lg bg-gradient-to-br from-[#0a2540] to-[#1a5490]">
+            <div className="overflow-hidden rounded-3xl shadow-lg bg-gradient-to-br from-brand-navy to-brand-navy-light">
               <Image
                 src="/Home.jpg"
                 alt="Modern Investment Property - Professional Real Estate for Physicians"

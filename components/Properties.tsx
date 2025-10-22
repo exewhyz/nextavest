@@ -84,9 +84,9 @@ export default function Properties() {
   //   const hasActiveDeals = properties.length > 0;
 
   return (
-    <section className="min-h-screen bg-[#f8fafb] border border-b">
+    <section className="min-h-screen bg-brand-bg border border-b">
       {/* Hero Section */}
-      {/* <section className="relative py-24 bg-gradient-to-br from-[#0a2540] to-[#1a5490] text-white">
+      {/* <section className="relative py-24 bg-gradient-to-br from-brand-navy to-brand-navy-light text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -117,10 +117,10 @@ export default function Properties() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0a2540] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">
               Our Investments
             </h2>
-            <p className="text-lg text-[#425466]">
+            <p className="text-lg text-brand-text">
               Focused on premium medical real estate with strategic
               diversification
             </p>
@@ -136,23 +136,23 @@ export default function Properties() {
               >
                 <Card
                   className={`h-full hover:shadow-lg transition-all duration-300 ${
-                    type.primary ? "border-2 border-[#1a5490] shadow-lg" : ""
+                    type.primary ? "border-2 border-brand-navy-light shadow-lg" : ""
                   }`}
                 >
                   <CardContent className="p-6 text-center">
                     <type.icon
                       className={`h-10 w-10 mx-auto mb-4 ${
-                        type.primary ? "text-[#1a5490]" : "text-[#425466]"
+                        type.primary ? "text-brand-navy-light" : "text-brand-text"
                       }`}
                     />
                     <h3
                       className={`text-lg font-semibold mb-2 ${
-                        type.primary ? "text-[#1a5490]" : "text-[#0a2540]"
+                        type.primary ? "text-brand-navy-light" : "text-brand-navy"
                       }`}
                     >
                       {type.name}
                     </h3>
-                    <p className="text-[#425466] text-sm">{type.description}</p>
+                    <p className="text-brand-text text-sm">{type.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -167,7 +167,7 @@ export default function Properties() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-3xl md:text-4xl font-bold text-[#0a2540] mb-16 text-center"
+            className="text-3xl md:text-4xl font-bold text-brand-navy mb-16 text-center"
           >
             Featured Properties
           </motion.h2>
@@ -191,14 +191,14 @@ export default function Properties() {
                     </div>
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-4">
-                        <h3 className="text-xl font-bold text-[#0a2540]">
+                        <h3 className="text-xl font-bold text-brand-navy">
                           {property.name}
                         </h3>
-                        <Badge className={property.status === "Active" ? "bg-[#10b981]" : "bg-[#6b7280]"}>
+                        <Badge className={property.status === "Active" ? "bg-brand-success" : "bg-gray-500"}>
                           {property.status}
                         </Badge>
                       </div>
-                      <div className="space-y-2 text-[#425466]">
+                      <div className="space-y-2 text-brand-text">
                         <p><strong>Type:</strong> {property.type}</p>
                         <p><strong>Location:</strong> {property.location}</p>
                         <p>{property.summary}</p>
@@ -219,10 +219,10 @@ export default function Properties() {
             >
               <Card className="max-w-2xl mx-auto">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-[#0a2540] mb-4">
+                  <h2 className="text-2xl font-bold text-brand-navy mb-4">
                     Between Acquisitions
                   </h2>
-                  <p className="text-[#425466] mb-6">
+                  <p className="text-brand-text mb-6">
                     We're currently between acquisitions. Join our investor list to be the first to know about upcoming offerings.
                   </p>
                   <Button className="bg-primary-orange-700 hover:bg-primary-orange-800">

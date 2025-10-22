@@ -7,7 +7,7 @@ import { Card, CardHeader, CardContent } from "./ui/card";
 export function HowItWorksDetailed() {
   const steps = [
     {
-      icon: <UserCheck className="h-8 w-8 text-[#1a5490]" />,
+      icon: <UserCheck className="h-8 w-8 text-brand-navy-light" />,
       step: "Step 1",
       title: "Join & Verify",
       description: "Complete accreditation check, risk tolerance assessment, and investment goals alignment.",
@@ -19,7 +19,7 @@ export function HowItWorksDetailed() {
       ]
     },
     {
-      icon: <FileSearch className="h-8 w-8 text-[#1a5490]" />,
+      icon: <FileSearch className="h-8 w-8 text-brand-navy-light" />,
       step: "Step 2",
       title: "Review Opportunities",
       description: "Access comprehensive deal snapshots with key metrics and analysis.",
@@ -31,7 +31,7 @@ export function HowItWorksDetailed() {
       ]
     },
     {
-      icon: <Coins className="h-8 w-8 text-[#1a5490]" />,
+      icon: <Coins className="h-8 w-8 text-brand-navy-light" />,
       step: "Step 3",
       title: "Invest",
       description: "Streamlined digital investment process with full documentation.",
@@ -43,7 +43,7 @@ export function HowItWorksDetailed() {
       ]
     },
     {
-      icon: <ChartBar className="h-8 w-8 text-[#1a5490]" />,
+      icon: <ChartBar className="h-8 w-8 text-brand-navy-light" />,
       step: "Step 4",
       title: "Get Paid & Stay Informed",
       description: "Regular distributions and comprehensive reporting.",
@@ -57,7 +57,7 @@ export function HowItWorksDetailed() {
   ];
 
   return (
-    <section className="py-24 bg-[#f8fafb]">
+    <section className="py-24 bg-brand-bg">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,10 +66,10 @@ export function HowItWorksDetailed() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#0a2540] mb-4">
+          <h2 className="text-4xl font-bold text-brand-navy mb-4">
             How Our Investment Process Works
           </h2>
-          <p className="text-lg text-[#425466] max-w-2xl mx-auto">
+          <p className="text-lg text-brand-text max-w-2xl mx-auto">
             A streamlined, physician-friendly process designed to respect your time while keeping you fully informed.
           </p>
         </motion.div>
@@ -90,21 +90,21 @@ export function HowItWorksDetailed() {
                       {step.icon}
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-[#1a5490]">
+                      <div className="text-sm font-semibold text-brand-navy-light">
                         {step.step}
                       </div>
-                      <h3 className="text-xl font-bold text-[#0a2540]">
+                      <h3 className="text-xl font-bold text-brand-navy">
                         {step.title}
                       </h3>
                     </div>
                   </div>
-                  <p className="text-[#425466]">{step.description}</p>
+                  <p className="text-brand-text">{step.description}</p>
                 </CardHeader>
                 <CardContent className="p-6 pt-0">
                   <ul className="space-y-2">
                     {step.items.map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-[#425466]">
-                        <div className="h-1.5 w-1.5 rounded-full bg-[#1a5490]" />
+                      <li key={i} className="flex items-center gap-2 text-brand-text">
+                        <div className="h-1.5 w-1.5 rounded-full bg-brand-navy-light" />
                         {item}
                       </li>
                     ))}
@@ -122,10 +122,10 @@ export function HowItWorksDetailed() {
           viewport={{ once: true }}
           className="mt-16 p-6 bg-white rounded-xl shadow-md max-w-md mx-auto"
         >
-          <h4 className="text-lg font-bold text-[#0a2540] mb-3">
+          <h4 className="text-lg font-bold text-brand-navy mb-3">
             Typical Timeline
           </h4>
-          <div className="space-y-2 text-[#425466]">
+          <div className="space-y-2 text-brand-text">
             <p>• First Call → Portal Access: 24-48 hours</p>
             <p>• Document Review → Investment: 3-5 days</p>
             <p>• Investment → First Distribution: 30-45 days</p>

@@ -7,7 +7,7 @@ import { Card, CardHeader, CardContent } from "./ui/card";
 export function DealCriteriaAndRisk() {
   const sections = [
     {
-      icon: <Building2 className="h-8 w-8 text-[#1a5490]" />,
+      icon: <Building2 className="h-8 w-8 text-brand-navy-light" />,
       title: "What We Buy",
       items: [
         "Essentials-driven cash-flow assets",
@@ -20,7 +20,7 @@ export function DealCriteriaAndRisk() {
       ]
     },
     {
-      icon: <SearchCheck className="h-8 w-8 text-[#1a5490]" />,
+      icon: <SearchCheck className="h-8 w-8 text-brand-navy-light" />,
       title: "How We Underwrite",
       items: [
         "Comprehensive stress testing",
@@ -33,7 +33,7 @@ export function DealCriteriaAndRisk() {
       ]
     },
     {
-      icon: <ShieldCheck className="h-8 w-8 text-[#1a5490]" />,
+      icon: <ShieldCheck className="h-8 w-8 text-brand-navy-light" />,
       title: "Risk Management",
       items: [
         "Tenant rollover monitoring",
@@ -57,10 +57,10 @@ export function DealCriteriaAndRisk() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#0a2540] mb-4">
+          <h2 className="text-4xl font-bold text-brand-navy mb-4">
             Deal Criteria & Risk Management
           </h2>
-          <p className="text-lg text-[#425466] max-w-2xl mx-auto">
+          <p className="text-lg text-brand-text max-w-2xl mx-auto">
             Our systematic approach to identifying, analyzing, and managing investment opportunities and risks.
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ export function DealCriteriaAndRisk() {
                     <div className="p-3 bg-[#f0f4f8] rounded-xl">
                       {section.icon}
                     </div>
-                    <h3 className="text-xl font-bold text-[#0a2540]">
+                    <h3 className="text-xl font-bold text-brand-navy">
                       {section.title}
                     </h3>
                   </div>
@@ -90,12 +90,12 @@ export function DealCriteriaAndRisk() {
                     {section.items.map((item, i) => (
                       <li 
                         key={i} 
-                        className={`flex items-start gap-2 text-[#425466] ${
+                        className={`flex items-start gap-2 text-brand-text ${
                           item.startsWith('-') ? 'pl-6 text-sm' : ''
                         }`}
                       >
                         {!item.startsWith('-') && (
-                          <div className="h-1.5 w-1.5 rounded-full bg-[#1a5490] mt-2" />
+                          <div className="h-1.5 w-1.5 rounded-full bg-brand-navy-light mt-2" />
                         )}
                         {item.startsWith('-') ? item.substring(2) : item}
                       </li>
@@ -112,9 +112,9 @@ export function DealCriteriaAndRisk() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-16 p-6 bg-[#f8fafb] rounded-xl max-w-2xl mx-auto text-center"
+          className="mt-16 p-6 bg-brand-bg rounded-xl max-w-2xl mx-auto text-center"
         >
-          <p className="text-[#425466] italic">
+          <p className="text-brand-text italic">
             "We maintain the same level of diligence and care in our investments as physicians do in their medical practice."
           </p>
         </motion.div>

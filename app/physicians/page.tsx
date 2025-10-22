@@ -82,11 +82,11 @@ function ForPhysicians() {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-navy-light to-cyan-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
             <Sparkles className="w-4 h-4" />
             For Physicians
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-brand-navy via-brand-navy to-brand-navy bg-clip-text text-transparent">
             Your Time Is Scarce. Your Money Should Work Overtime.
           </h2>
         </div>
@@ -118,10 +118,10 @@ function ForPhysicians() {
                         <Icon className="h-6 w-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-bold text-xl mb-2 text-slate-900">
+                        <h3 className="font-bold text-xl mb-2 text-brand-navy">
                           {section.title}
                         </h3>
-                        <p className="text-slate-600 leading-relaxed">
+                        <p className="text-brand-text leading-relaxed">
                           {section.description}
                         </p>
                         <div
@@ -147,7 +147,7 @@ function ForPhysicians() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-6 text-lg group"
+              className="bg-gradient-to-r from-brand-navy-light to-cyan-600 hover:from-brand-navy hover:to-cyan-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-6 text-lg group"
             >
               Download 12-Minute Guide
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -155,7 +155,7 @@ function ForPhysicians() {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-6 text-lg"
+              className="border-2 border-slate-300 text-brand-text hover:bg-slate-50 px-8 py-6 text-lg"
             >
               Book a Call
             </Button>
@@ -246,14 +246,14 @@ function HowItWorksDetailed() {
     <section className="py-32 bg-gradient-to-b from-white to-slate-50 border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
             Simple Process
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
             How Our Investment Process Works
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-6"></div>
+          <p className="text-xl text-brand-text max-w-2xl mx-auto">
             A streamlined, physician-friendly process designed to respect your
             time while keeping you fully informed.
           </p>
@@ -273,15 +273,15 @@ function HowItWorksDetailed() {
                         <Icon className="h-8 w-8 text-white" />
                       </div>
                       <div>
-                        <div className="text-sm font-semibold text-blue-600 mb-1">
+                        <div className="text-sm font-semibold text-brand-navy-light mb-1">
                           {step.step}
                         </div>
-                        <h3 className="text-2xl font-bold text-slate-900">
+                        <h3 className="text-2xl font-bold text-brand-navy">
                           {step.title}
                         </h3>
                       </div>
                     </div>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-brand-text leading-relaxed">
                       {step.description}
                     </p>
                   </CardHeader>
@@ -290,7 +290,7 @@ function HowItWorksDetailed() {
                       {step.items.map((item, i) => (
                         <li
                           key={i}
-                          className="flex items-center gap-3 text-slate-600"
+                          className="flex items-center gap-3 text-brand-text"
                         >
                           <div
                             className={`h-2 w-2 rounded-full bg-gradient-to-r ${step.gradient}`}
@@ -308,22 +308,22 @@ function HowItWorksDetailed() {
 
         <div className="mt-16 p-8 bg-white rounded-2xl shadow-lg max-w-md mx-auto border border-slate-200">
           <div className="flex items-center gap-3 mb-4">
-            <Clock className="h-6 w-6 text-blue-600" />
-            <h4 className="text-xl font-bold text-slate-900">
+            <Clock className="h-6 w-6 text-brand-navy-light" />
+            <h4 className="text-xl font-bold text-brand-navy">
               Typical Timeline
             </h4>
           </div>
-          <div className="space-y-3 text-slate-600">
+          <div className="space-y-3 text-brand-text">
             <p className="flex items-center gap-2">
-              <span className="text-blue-600">→</span> First Call → Portal
+              <span className="text-brand-navy-light">→</span> First Call → Portal
               Access: <strong>24-48 hours</strong>
             </p>
             <p className="flex items-center gap-2">
-              <span className="text-blue-600">→</span> Document Review →
+              <span className="text-brand-navy-light">→</span> Document Review →
               Investment: <strong>3-5 days</strong>
             </p>
             <p className="flex items-center gap-2">
-              <span className="text-blue-600">→</span> Investment → First
+              <span className="text-brand-navy-light">→</span> Investment → First
               Distribution: <strong>30-45 days</strong>
             </p>
           </div>
@@ -384,14 +384,14 @@ function DealCriteriaAndRisk() {
     <section className="py-32 bg-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
             Our Approach
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
             Deal Criteria & Risk Management
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-6"></div>
+          <p className="text-xl text-brand-text max-w-2xl mx-auto">
             Our systematic approach to identifying, analyzing, and managing
             investment opportunities and risks.
           </p>
@@ -410,7 +410,7 @@ function DealCriteriaAndRisk() {
                       >
                         <Icon className="h-8 w-8 text-white" />
                       </div>
-                      <h3 className="text-2xl font-bold text-slate-900">
+                      <h3 className="text-2xl font-bold text-brand-navy">
                         {section.title}
                       </h3>
                     </div>
@@ -420,7 +420,7 @@ function DealCriteriaAndRisk() {
                       {section.items.map((item, i) => (
                         <li
                           key={i}
-                          className={`flex items-start gap-2 text-slate-600 ${
+                          className={`flex items-start gap-2 text-brand-text ${
                             item.startsWith("-") ? "pl-6 text-sm" : ""
                           }`}
                         >
@@ -441,7 +441,7 @@ function DealCriteriaAndRisk() {
         </div>
 
         <div className="mt-16 p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl max-w-2xl mx-auto text-center border border-blue-100">
-          <p className="text-lg text-slate-700 italic font-medium">
+          <p className="text-lg text-brand-text italic font-medium">
             "We maintain the same level of diligence and care in our investments
             as physicians do in their medical practice."
           </p>
@@ -480,14 +480,14 @@ function CurrentOfferings() {
     <section className="py-32 bg-gradient-to-b from-slate-50 to-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
             Active Deals
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
             Current Investment Opportunities
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-6"></div>
+          <p className="text-xl text-brand-text max-w-2xl mx-auto">
             SEC-qualified investment opportunities, exclusively for accredited
             investors.
           </p>
@@ -499,10 +499,10 @@ function CurrentOfferings() {
               <div key={index} className="group">
                 <Card className="h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-slate-200 overflow-hidden">
                   <CardHeader className="p-0">
-                    <div className="relative h-48 w-full bg-gradient-to-br from-blue-600 to-cyan-600">
+                    <div className="relative h-48 w-full bg-gradient-to-br from-brand-navy-light to-cyan-600">
                       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_50%_120%,rgba(255,255,255,0.8),transparent)]"></div>
                       <div className="absolute bottom-4 left-4 right-4">
-                        <span className="bg-white text-slate-900 text-sm font-semibold px-4 py-2 rounded-full shadow-lg">
+                        <span className="bg-white text-brand-navy text-sm font-semibold px-4 py-2 rounded-full shadow-lg">
                           Limited Availability
                         </span>
                       </div>
@@ -510,18 +510,18 @@ function CurrentOfferings() {
                   </CardHeader>
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <Lock className="h-4 w-4 text-blue-600" />
-                      <span className="text-sm text-slate-600">
+                      <Lock className="h-4 w-4 text-brand-navy-light" />
+                      <span className="text-sm text-brand-text">
                         Accredited Investors Only
                       </span>
                     </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                    <h3 className="text-2xl font-bold text-brand-navy mb-3">
                       {offering.title}
                     </h3>
-                    <p className="text-slate-600 mb-4">
+                    <p className="text-brand-text mb-4">
                       {offering.description}
                     </p>
-                    <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white group">
+                    <Button className="w-full bg-gradient-to-r from-brand-navy-light to-cyan-600 hover:from-brand-navy hover:to-cyan-700 text-white group">
                       View Investment Details
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
@@ -535,19 +535,19 @@ function CurrentOfferings() {
             <Card className="bg-white border-2 border-dashed border-slate-300">
               <CardContent className="p-12">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Building2 className="h-8 w-8 text-blue-600" />
+                  <Building2 className="h-8 w-8 text-brand-navy-light" />
                 </div>
-                <h3 className="text-3xl font-bold text-slate-900 mb-4">
+                <h3 className="text-3xl font-bold text-brand-navy mb-4">
                   Between Acquisitions
                 </h3>
-                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                <p className="text-lg text-brand-text mb-8 leading-relaxed">
                   We're currently evaluating new opportunities that meet our
                   strict investment criteria. Join our investor list to be the
                   first to know when our next offering becomes available.
                 </p>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-6 text-lg group"
+                  className="bg-gradient-to-r from-brand-navy-light to-cyan-600 hover:from-brand-navy hover:to-cyan-700 text-white px-8 py-6 text-lg group"
                 >
                   Join The Investor List
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -602,14 +602,14 @@ function CaseStudies() {
     <section className="py-32 bg-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
             Proven Results
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
             Track Record & Case Studies
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-6"></div>
+          <p className="text-xl text-brand-text max-w-2xl mx-auto">
             Real results from our investment strategy, with key learnings from
             each project.
           </p>
@@ -622,14 +622,14 @@ function CaseStudies() {
                 <CardHeader className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                      <h3 className="text-2xl font-bold text-brand-navy mb-2">
                         {study.title}
                       </h3>
-                      <p className="text-blue-600 font-semibold">
+                      <p className="text-brand-navy-light font-semibold">
                         {study.plan}
                       </p>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-slate-600 bg-slate-100 px-3 py-2 rounded-full">
+                    <div className="flex items-center gap-2 text-sm text-brand-text bg-slate-100 px-3 py-2 rounded-full">
                       <Clock className="h-4 w-4" />
                       {study.holdPeriod}
                     </div>
@@ -637,15 +637,15 @@ function CaseStudies() {
 
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl border border-blue-100">
-                      <div className="text-sm text-slate-600 mb-1 font-medium">
+                      <div className="text-sm text-brand-text mb-1 font-medium">
                         CoC
                       </div>
-                      <div className="font-bold text-xl text-blue-600">
+                      <div className="font-bold text-xl text-brand-navy-light">
                         {study.coc}
                       </div>
                     </div>
                     <div className="text-center p-4 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
-                      <div className="text-sm text-slate-600 mb-1 font-medium">
+                      <div className="text-sm text-brand-text mb-1 font-medium">
                         Multiple
                       </div>
                       <div className="font-bold text-xl text-emerald-600">
@@ -653,7 +653,7 @@ function CaseStudies() {
                       </div>
                     </div>
                     <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl border border-purple-100">
-                      <div className="text-sm text-slate-600 mb-1 font-medium">
+                      <div className="text-sm text-brand-text mb-1 font-medium">
                         IRR
                       </div>
                       <div className="font-bold text-xl text-purple-600">
@@ -666,8 +666,8 @@ function CaseStudies() {
                 <CardContent className="p-6 pt-0">
                   <div className="mb-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <TrendingUp className="h-5 w-5 text-blue-600" />
-                      <h4 className="font-semibold text-slate-900 text-lg">
+                      <TrendingUp className="h-5 w-5 text-brand-navy-light" />
+                      <h4 className="font-semibold text-brand-navy text-lg">
                         Key Actions
                       </h4>
                     </div>
@@ -675,9 +675,9 @@ function CaseStudies() {
                       {study.keyActions.map((action, i) => (
                         <li
                           key={i}
-                          className="flex items-start gap-3 text-slate-600"
+                          className="flex items-start gap-3 text-brand-text"
                         >
-                          <div className="h-2 w-2 rounded-full bg-blue-600 mt-2 flex-shrink-0" />
+                          <div className="h-2 w-2 rounded-full bg-brand-navy-light mt-2 flex-shrink-0" />
                           {action}
                         </li>
                       ))}
@@ -687,11 +687,11 @@ function CaseStudies() {
                   <div className="p-4 bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl border border-amber-100">
                     <div className="flex items-center gap-2 mb-2">
                       <Lightbulb className="h-5 w-5 text-amber-600" />
-                      <h4 className="font-semibold text-slate-900">
+                      <h4 className="font-semibold text-brand-navy">
                         What We Learned
                       </h4>
                     </div>
-                    <p className="text-slate-700 leading-relaxed">
+                    <p className="text-brand-text leading-relaxed">
                       {study.learnings}
                     </p>
                   </div>
@@ -788,14 +788,14 @@ function EducationHub() {
     <section className="py-32 bg-gradient-to-b from-slate-50 to-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
             Learn More
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
             Education Hub
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-6"></div>
+          <p className="text-xl text-brand-text max-w-2xl mx-auto">
             Curated resources to help physicians make informed investment
             decisions.
           </p>
@@ -833,16 +833,16 @@ function EducationHub() {
                   <Card className="h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-slate-200">
                     <CardHeader className="flex flex-row items-start gap-4 p-6">
                       <div className="p-3 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-xl">
-                        <Book className="h-6 w-6 text-blue-600" />
+                        <Book className="h-6 w-6 text-brand-navy-light" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                        <h3 className="text-xl font-semibold text-brand-navy mb-2">
                           {guide.title}
                         </h3>
-                        <p className="text-slate-600 mb-3 leading-relaxed">
+                        <p className="text-brand-text mb-3 leading-relaxed">
                           {guide.description}
                         </p>
-                        <div className="flex items-center gap-2 text-sm text-blue-600 font-medium">
+                        <div className="flex items-center gap-2 text-sm text-brand-navy-light font-medium">
                           <Clock className="h-4 w-4" />
                           {guide.readTime}
                         </div>
@@ -863,10 +863,10 @@ function EducationHub() {
                       <div className="p-3 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl mb-4 w-fit">
                         <PlayCircle className="h-6 w-6 text-purple-600" />
                       </div>
-                      <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                      <h3 className="text-xl font-semibold text-brand-navy mb-2">
                         {webinar.title}
                       </h3>
-                      <p className="text-slate-600 mb-3 leading-relaxed">
+                      <p className="text-brand-text mb-3 leading-relaxed">
                         {webinar.description}
                       </p>
                       <div className="flex items-center gap-2 text-sm text-purple-600 font-medium">
@@ -891,10 +891,10 @@ function EducationHub() {
                           <Bookmark className="h-5 w-5 text-emerald-600" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                          <h3 className="text-lg font-semibold text-brand-navy mb-2">
                             {item.term}
                           </h3>
-                          <p className="text-slate-600 leading-relaxed">
+                          <p className="text-brand-text leading-relaxed">
                             {item.definition}
                           </p>
                         </div>
@@ -946,18 +946,18 @@ function AboutFamily() {
     <section className="py-32 bg-gradient-to-b from-white to-slate-50 border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
             Our Story
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-brand-navy mb-6 max-w-4xl mx-auto leading-tight">
             Decades In Medicine. A Mission To Help Physicians Invest Better.
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto mb-20">
           <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-600"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-navy-light to-cyan-600"></div>
             <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-semibold">
               <Image
                 src="/medical.jpg"
@@ -970,12 +970,12 @@ function AboutFamily() {
           </div>
 
           <div className="space-y-6">
-            <p className="text-lg text-slate-700 leading-relaxed">
+            <p className="text-lg text-brand-text leading-relaxed">
               Our family has been devoted to healthcare and research for
               decades. We saw first-hand how physicians carry intense schedules,
               high taxes, and limited time to evaluate investments.
             </p>
-            <p className="text-lg text-slate-700 leading-relaxed">
+            <p className="text-lg text-brand-text leading-relaxed">
               We created this platform so medical professionals can co-invest
               alongside us in real, cash-flowing properties—with the same
               diligence and care we bring to patients and research.
@@ -984,10 +984,10 @@ function AboutFamily() {
             <div className="grid grid-cols-2 gap-6 mt-8 pt-8 border-t border-slate-200">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
+                  <div className="text-4xl font-bold bg-gradient-to-r from-brand-navy-light to-cyan-600 bg-clip-text text-transparent mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-sm text-slate-600 font-medium">
+                  <div className="text-sm text-brand-text font-medium">
                     {stat.label}
                   </div>
                 </div>
@@ -1010,10 +1010,10 @@ function AboutFamily() {
                         <Icon className="h-8 w-8 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">
+                    <h3 className="text-xl font-bold text-brand-navy mb-3">
                       {value.title}
                     </h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-brand-text leading-relaxed">
                       {value.description}
                     </p>
                   </CardContent>
@@ -1086,14 +1086,14 @@ function FAQSection() {
     <section className="py-32 bg-white border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
             Got Questions?
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
             Frequently Asked Questions
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-6"></div>
+          <p className="text-xl text-brand-text max-w-2xl mx-auto">
             Common questions from our physician investors. Don't see yours?
             Contact us directly.
           </p>
@@ -1107,10 +1107,10 @@ function FAQSection() {
                 value={`item-${index}`}
                 className="border-2 border-slate-200 rounded-2xl bg-white hover:border-blue-200 transition-colors duration-200 overflow-hidden"
               >
-                <AccordionTrigger className="px-6 py-4 text-slate-900 hover:text-blue-600 text-left font-semibold text-lg hover:no-underline">
+                <AccordionTrigger className="px-6 py-4 text-brand-navy hover:text-brand-navy-light text-left font-semibold text-lg hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6 text-slate-600 leading-relaxed text-base">
+                <AccordionContent className="px-6 pb-6 text-brand-text leading-relaxed text-base">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

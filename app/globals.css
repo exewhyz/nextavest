@@ -37,6 +37,17 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-light: var(--brand-navy-light);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-light: var(--brand-orange-light);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-light: var(--brand-blue-light);
+  --color-brand-cyan: var(--brand-cyan);
+  --color-brand-cyan-light: var(--brand-cyan-light);
+  --color-brand-success: var(--brand-success);
+  --color-brand-text: var(--brand-text);
+  --color-brand-bg: var(--brand-bg);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -84,6 +95,19 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  
+  /* Brand Colors - NextaVest Theme */
+  --brand-navy: oklch(0.204 0.056 251.456); /* #0a2540 */
+  --brand-navy-light: oklch(0.411 0.096 251.456); /* #1a5490 */
+  --brand-orange: oklch(0.713 0.149 42.857); /* #FF9633 */
+  --brand-orange-light: oklch(0.653 0.174 35.714); /* #F27A00 */
+  --brand-blue: oklch(0.512 0.117 217.5); /* #007b91 */
+  --brand-blue-light: oklch(0.656 0.125 217.5); /* #00a7c5 */
+  --brand-cyan: oklch(0.689 0.154 226.471); /* #0ea5e9 */
+  --brand-cyan-light: oklch(0.7 0.162 223.235); /* #06b6d4 */
+  --brand-success: oklch(0.643 0.169 160.588); /* #10b981 */
+  --brand-text: oklch(0.485 0.015 251.456); /* #425466 */
+  --brand-bg: oklch(0.985 0.003 251.456); /* #f8fafb */
 }
 
 .dark {
@@ -118,6 +142,19 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  
+  /* Brand Colors - Dark Mode Adjustments */
+  --brand-navy: oklch(0.204 0.056 251.456);
+  --brand-navy-light: oklch(0.511 0.096 251.456);
+  --brand-orange: oklch(0.713 0.149 42.857);
+  --brand-orange-light: oklch(0.753 0.174 35.714);
+  --brand-blue: oklch(0.612 0.117 217.5);
+  --brand-blue-light: oklch(0.756 0.125 217.5);
+  --brand-cyan: oklch(0.789 0.154 226.471);
+  --brand-cyan-light: oklch(0.8 0.162 223.235);
+  --brand-success: oklch(0.743 0.169 160.588);
+  --brand-text: oklch(0.785 0.015 251.456);
+  --brand-bg: oklch(0.245 0.003 251.456);
 }
 
 @layer base {

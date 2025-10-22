@@ -20,7 +20,7 @@ export function StickyBannerDemo() {
 
   return (
     <StickyBanner
-      className="bg-gradient-to-r from-[#0a2540] via-[#1a5490] to-[#0a2540] overflow-hidden"
+      className="bg-gradient-to-r from-brand-navy via-brand-navy-light to-brand-navy overflow-hidden"
       hideOnScroll={true}
     >
       <div className="relative flex overflow-hidden w-full">
@@ -30,7 +30,7 @@ export function StickyBannerDemo() {
               key={`property-1-${index}`}
               className="mx-4 text-sm md:text-base text-white font-medium"
             >
-              {property} <span className="text-[#FF9633]">|</span>
+              {property} <span className="text-brand-orange">|</span>
             </span>
           ))}
         </div>
@@ -40,7 +40,7 @@ export function StickyBannerDemo() {
               key={`property-2-${index}`}
               className="mx-4 text-sm md:text-base text-white font-medium"
             >
-              {property} <span className="text-[#FF9633]">|</span>
+              {property} <span className="text-brand-orange">|</span>
             </span>
           ))}
         </div>

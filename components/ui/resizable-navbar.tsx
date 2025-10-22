@@ -243,7 +243,7 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-xl md:text-2xl font-bold"
     >
-      {/* <span className="font-bold text-[#0a2540] hover:text-blue-600 transition-colors dark:text-white">NextaVest</span> */}
+      {/* <span className="font-bold text-brand-navy hover:text-blue-600 transition-colors dark:text-white">NextaVest</span> */}
       <Image src="/logo.png" alt="Nextavest Logo" width={150} height={50} />
     </Link>
   );

@@ -26,7 +26,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex flex-col items-center md:items-start col-span-2"
           >
-            <h3 className="text-2xl font-bold mb-4 text-[#FF9633]">
+            <h3 className="text-2xl font-bold mb-4 text-brand-orange">
               NextaVest
             </h3>
             <p className=" leading-relaxed w-3/4">
@@ -52,7 +52,7 @@ export default function Footer() {
                 <li key={page.label}>
                   <Link
                     href={page.href}
-                    className="hover:text-[#FF9633] transition-colors duration-200"
+                    className="hover:text-brand-orange transition-colors duration-200"
                   >
                     {page.label}
                   </Link>
@@ -72,14 +72,14 @@ export default function Footer() {
             <div className="space-y-4">
               <a
                 href="tel:15162173673"
-                className="flex items-center gap-3  hover:text-[#FF9633] transition-colors duration-200"
+                className="flex items-center gap-3  hover:text-brand-orange transition-colors duration-200"
               >
                 <Phone className="h-5 w-5" />
                 <span>1 (516) 217-3673</span>
               </a>
               <a
                 href="mailto:info@nextavest.com"
-                className="flex items-center gap-3  hover:text-[#FF9633] transition-colors duration-200"
+                className="flex items-center gap-3  hover:text-brand-orange transition-colors duration-200"
               >
                 <Mail className="h-5 w-5" />
                 <span>info@nextavest.com</span>

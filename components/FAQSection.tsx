@@ -62,10 +62,10 @@ export function FAQSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#0a2540] mb-4">
+          <h2 className="text-4xl font-bold text-brand-navy mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-[#425466] max-w-2xl mx-auto">
+          <p className="text-lg text-brand-text max-w-2xl mx-auto">
             Common questions from our physician investors. Don't see yours? Contact us directly.
           </p>
         </motion.div>
@@ -80,11 +80,11 @@ export function FAQSection() {
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <AccordionItem value={`item-${index}`} className="border rounded-lg bg-[#f8fafb]">
-                  <AccordionTrigger className="px-6 text-[#0a2540] hover:text-[#1a5490] text-left">
+                <AccordionItem value={`item-${index}`} className="border rounded-lg bg-brand-bg">
+                  <AccordionTrigger className="px-6 text-brand-navy hover:text-brand-navy-light text-left">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 text-[#425466]">
+                  <AccordionContent className="px-6 pb-4 text-brand-text">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

@@ -21,7 +21,7 @@ const NextavestForm = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-slate-50">
       {/* Form Section */}
-      <section className="py-20 bg-[#f8fafb] border-b">
+      <section className="py-20 bg-brand-bg border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -78,7 +78,7 @@ const glossaryTerms: { term: string; definition: string }[] = [
 
 export function EducationHub() {
   return (
-    <section className="py-24 bg-[#f8fafb]">
+    <section className="py-24 bg-brand-bg">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -87,10 +87,10 @@ export function EducationHub() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#0a2540] mb-4">
+          <h2 className="text-4xl font-bold text-brand-navy mb-4">
             Education Hub
           </h2>
-          <p className="text-lg text-[#425466] max-w-2xl mx-auto">
+          <p className="text-lg text-brand-text max-w-2xl mx-auto">
             Curated resources to help physicians make informed investment decisions.
           </p>
         </motion.div>
@@ -123,13 +123,13 @@ export function EducationHub() {
                 >
                   <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                     <CardHeader className="flex flex-row items-start gap-4">
-                      <Book className="h-6 w-6 text-[#1a5490] mt-1" />
+                      <Book className="h-6 w-6 text-brand-navy-light mt-1" />
                       <div>
-                        <h3 className="text-xl font-semibold text-[#0a2540] mb-2">
+                        <h3 className="text-xl font-semibold text-brand-navy mb-2">
                           {guide.title}
                         </h3>
-                        <p className="text-[#425466]">{guide.description}</p>
-                        <div className="text-sm text-[#1a5490] mt-2">
+                        <p className="text-brand-text">{guide.description}</p>
+                        <div className="text-sm text-brand-navy-light mt-2">
                           {guide.readTime}
                         </div>
                       </div>
@@ -152,13 +152,13 @@ export function EducationHub() {
                 >
                   <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                     <CardHeader className="flex flex-row items-start gap-4">
-                      <PlayCircle className="h-6 w-6 text-[#1a5490] mt-1" />
+                      <PlayCircle className="h-6 w-6 text-brand-navy-light mt-1" />
                       <div>
-                        <h3 className="text-xl font-semibold text-[#0a2540] mb-2">
+                        <h3 className="text-xl font-semibold text-brand-navy mb-2">
                           {webinar.title}
                         </h3>
-                        <p className="text-[#425466]">{webinar.description}</p>
-                        <div className="text-sm text-[#1a5490] mt-2">
+                        <p className="text-brand-text">{webinar.description}</p>
+                        <div className="text-sm text-brand-navy-light mt-2">
                           {webinar.watchTime}
                         </div>
                       </div>
@@ -181,12 +181,12 @@ export function EducationHub() {
                 >
                   <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                     <CardHeader className="flex flex-row items-start gap-4">
-                      <Bookmark className="h-5 w-5 text-[#1a5490] mt-1" />
+                      <Bookmark className="h-5 w-5 text-brand-navy-light mt-1" />
                       <div>
-                        <h3 className="text-lg font-semibold text-[#0a2540] mb-2">
+                        <h3 className="text-lg font-semibold text-brand-navy mb-2">
                           {item.term}
                         </h3>
-                        <p className="text-[#425466]">{item.definition}</p>
+                        <p className="text-brand-text">{item.definition}</p>
                       </div>
                     </CardHeader>
                   </Card>

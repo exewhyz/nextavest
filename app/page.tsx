@@ -28,7 +28,7 @@ const FeaturedOffering = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#f8fafb] border border-b">
+    <section className="py-20 bg-brand-bg border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,10 +37,10 @@ const FeaturedOffering = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0a2540]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-brand-navy">
             Current Opportunity
           </h2>
-          <p className="text-xl text-[#425466]">
+          <p className="text-xl text-brand-text">
             Exclusive access for accredited medical professionals
           </p>
         </motion.div>
@@ -52,8 +52,8 @@ const FeaturedOffering = () => {
           viewport={{ once: true }}
         >
           <Card className="max-w-5xl mx-auto overflow-hidden shadow-2xl">
-            <div className="bg-gradient-to-r from-[#0a2540] to-[#1a5490] p-8 text-white">
-              <Badge className="bg-[#10b981] text-white mb-4 border-0">
+            <div className="bg-gradient-to-r from-brand-navy to-brand-navy-light p-8 text-white">
+              <Badge className="bg-brand-success text-white mb-4 border-0">
                 Now Accepting Investors
               </Badge>
               <h3 className="text-3xl font-bold mb-2">Midwest Medical Plaza</h3>
@@ -67,12 +67,12 @@ const FeaturedOffering = () => {
                 {metrics.map((metric) => (
                   <div
                     key={metric.label}
-                    className="text-center p-4 bg-[#f8fafb] rounded-lg"
+                    className="text-center p-4 bg-brand-bg rounded-lg"
                   >
-                    <div className="text-3xl font-bold text-[#1a5490] mb-2">
+                    <div className="text-3xl font-bold text-brand-navy-light mb-2">
                       {metric.value}
                     </div>
-                    <div className="text-sm text-[#425466]">{metric.label}</div>
+                    <div className="text-sm text-brand-text">{metric.label}</div>
                   </div>
                 ))}
               </div>
@@ -134,10 +134,10 @@ const WhyInvest = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0a2540]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-brand-navy">
             Why Medical Professionals Choose Us
           </h2>
-          <p className="text-xl text-[#425466]">
+          <p className="text-xl text-brand-text">
             Alignment, transparency, and physician-first approach
           </p>
         </motion.div>
@@ -152,12 +152,12 @@ const WhyInvest = () => {
               viewport={{ once: true }}
               className="flex gap-4 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <CheckCircle2 className="h-6 w-6 text-[#1a5490] flex-shrink-0 mt-1" />
+              <CheckCircle2 className="h-6 w-6 text-brand-navy-light flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-lg mb-2 text-[#0a2540]">
+                <h3 className="font-bold text-lg mb-2 text-brand-navy">
                   {feature.title}
                 </h3>
-                <p className="text-[#425466]">{feature.description}</p>
+                <p className="text-brand-text">{feature.description}</p>
               </div>
             </motion.div>
           ))}
@@ -169,7 +169,7 @@ const WhyInvest = () => {
 
 // CTA Section
 const CTASection = () => (
-  <section className="py-20 bg-gradient-to-br from-[#0a2540] to-[#1a5490] relative overflow-hidden border border-b">
+  <section className="py-20 bg-gradient-to-br from-brand-navy to-brand-navy-light relative overflow-hidden border border-b">
     <BackgroundBeams />
     <div className="container mx-auto px-4 lg:px-8 relative z-10">
       <motion.div

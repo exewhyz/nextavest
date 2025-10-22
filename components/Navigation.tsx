@@ -24,7 +24,7 @@ export function Navigation() {
           <div className="flex items-center flex-shrink-0">
             <Link
               href="/"
-              className="text-xl md:text-2xl font-bold text-[#0a2540] hover:text-blue-600 transition-colors"
+              className="text-xl md:text-2xl font-bold text-brand-navy hover:text-brand-navy-light transition-colors"
             >
               NextaVest
             </Link>

@@ -98,7 +98,7 @@ export default function TeamsPage() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
       {/* Hero Section */}
       {/* <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-600 to-blue-800 opacity-95"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy-light via-cyan-600 to-blue-800 opacity-95"></div>
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-10 md:top-20 -right-10 md:right-20 w-48 md:w-96 h-48 md:h-96 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl"></div>
           <div className="absolute -bottom-10 md:bottom-20 -left-10 md:left-20 w-48 md:w-96 h-48 md:h-96 bg-cyan-400/20 rounded-full mix-blend-overlay filter blur-3xl"></div>
@@ -163,15 +163,15 @@ export default function TeamsPage() {
               className="order-1 md:order-2"
             >
               <div className="inline-block mb-3 md:mb-4">
-                <span className="text-blue-600 font-semibold text-xs md:text-sm tracking-wider uppercase">
+                <span className="text-brand-navy-light font-semibold text-xs md:text-sm tracking-wider uppercase">
                   Our Beginning
                 </span>
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 md:mb-6 leading-tight break-words">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-4 md:mb-6 leading-tight break-words">
                 The Meridian Story
               </h2>
-              <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mb-4 md:mb-6"></div>
-              <div className="space-y-3 md:space-y-4 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
+              <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mb-4 md:mb-6"></div>
+              <div className="space-y-3 md:space-y-4 text-sm sm:text-base md:text-lg text-brand-text leading-relaxed">
                 <p className="break-words">
                   Dana and Bruce Shapiro built one of the largest medical
                   laboratory companies in the United States —{" "}
@@ -202,13 +202,13 @@ export default function TeamsPage() {
             className="max-w-4xl mx-auto"
           >
             <div className="text-center mb-10 md:mb-16">
-              <span className="text-blue-600 font-semibold text-xs md:text-sm tracking-wider uppercase mb-3 md:mb-4 block">
+              <span className="text-brand-navy-light font-semibold text-xs md:text-sm tracking-wider uppercase mb-3 md:mb-4 block">
                 The Turning Point
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-4 md:mb-6 px-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-navy mb-4 md:mb-6 px-4">
                 But over the years, they noticed a troubling pattern
               </h2>
-              <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto"></div>
+              <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto"></div>
             </div>
 
             <motion.div
@@ -218,11 +218,11 @@ export default function TeamsPage() {
               viewport={{ once: true }}
               className="relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 opacity-5"></div>
-              <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 p-4 md:p-8 rounded-2xl border-l-4 border-blue-600 shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-navy-light to-cyan-600 opacity-5"></div>
+              <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 p-4 md:p-8 rounded-2xl border-l-4 border-brand-navy-light shadow-lg">
                 <div className="flex items-start gap-3 md:gap-4">
-                  <ArrowRight className="w-6 md:w-8 h-6 md:h-8 text-blue-600 flex-shrink-0 mt-1" />
-                  <p className="text-base md:text-xl font-semibold text-slate-900">
+                  <ArrowRight className="w-6 md:w-8 h-6 md:h-8 text-brand-navy-light flex-shrink-0 mt-1" />
+                  <p className="text-base md:text-xl font-semibold text-brand-navy">
                     When doctors retired or sold their practices, their income
                     stopped.
                   </p>
@@ -235,7 +235,7 @@ export default function TeamsPage() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
               viewport={{ once: true }}
-              className="text-base md:text-lg text-slate-600 mt-6 md:mt-8 leading-relaxed text-center px-4"
+              className="text-base md:text-lg text-brand-text mt-6 md:mt-8 leading-relaxed text-center px-4"
             >
               The same physicians who had built thriving careers were suddenly
               searching for stability again — this time,{" "}
@@ -249,7 +249,7 @@ export default function TeamsPage() {
               viewport={{ once: true }}
               className="mt-8 md:mt-12 text-center px-4"
             >
-              <p className="text-xl md:text-2xl font-bold text-blue-600">
+              <p className="text-xl md:text-2xl font-bold text-brand-navy-light">
                 That realization became the foundation for NextaVest.
               </p>
             </motion.div>
@@ -267,14 +267,14 @@ export default function TeamsPage() {
             viewport={{ once: true }}
             className="text-center mb-12 md:mb-20"
           >
-            <span className="text-blue-600 font-semibold text-xs md:text-sm tracking-wider uppercase mb-3 md:mb-4 block">
+            <span className="text-brand-navy-light font-semibold text-xs md:text-sm tracking-wider uppercase mb-3 md:mb-4 block">
               Leadership Team
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-4 md:mb-6 px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-navy mb-4 md:mb-6 px-4">
               Meet Dana & Bruce
             </h2>
-            <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-4 md:mb-6"></div>
-            <p className="text-base md:text-xl text-slate-600 max-w-3xl mx-auto px-4">
+            <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-4 md:mb-6"></div>
+            <p className="text-base md:text-xl text-brand-text max-w-3xl mx-auto px-4">
               Dedicated to helping medical professionals build lasting wealth
               through strategic real estate investment
             </p>
@@ -298,7 +298,7 @@ export default function TeamsPage() {
                       fill
                       className="object-cover object-top group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 to-transparent"></div>
                     <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white">
                       <div>
                         <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1">
@@ -311,7 +311,7 @@ export default function TeamsPage() {
                     </div>
                   </div>
                   <CardContent className="p-4 md:p-6 lg:p-8">
-                    <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+                    <p className="text-sm md:text-base text-brand-text leading-relaxed">
                       {founder.bio}
                     </p>
                   </CardContent>
@@ -332,14 +332,14 @@ export default function TeamsPage() {
             viewport={{ once: true }}
             className="text-center mb-12 md:mb-20"
           >
-            <span className="text-blue-600 font-semibold text-xs md:text-sm tracking-wider uppercase mb-3 md:mb-4 block">
+            <span className="text-brand-navy-light font-semibold text-xs md:text-sm tracking-wider uppercase mb-3 md:mb-4 block">
               Our Team
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-4 md:mb-6 px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-navy mb-4 md:mb-6 px-4">
               Meet the Leadership Team
             </h2>
-            <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-4 md:mb-6"></div>
-            <p className="text-base md:text-xl text-slate-600 max-w-3xl mx-auto px-4">
+            <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-4 md:mb-6"></div>
+            <p className="text-base md:text-xl text-brand-text max-w-3xl mx-auto px-4">
               Experienced professionals committed to delivering exceptional
               results for our physician investors
             </p>
@@ -372,10 +372,10 @@ export default function TeamsPage() {
 
                   {/* Content Section */}
                   <CardContent className="p-6 text-center">
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">
+                    <h3 className="text-xl font-bold text-brand-navy mb-2">
                       {member.name}
                     </h3>
-                    <p className="text-sm text-blue-600 font-medium">
+                    <p className="text-sm text-brand-navy-light font-medium">
                       {member.role}
                     </p>
                   </CardContent>
@@ -396,13 +396,13 @@ export default function TeamsPage() {
             viewport={{ once: true }}
             className="text-center mb-12 md:mb-20"
           >
-            <span className="text-blue-600 font-semibold text-xs md:text-sm tracking-wider uppercase mb-3 md:mb-4 block">
+            <span className="text-brand-navy-light font-semibold text-xs md:text-sm tracking-wider uppercase mb-3 md:mb-4 block">
               Our Journey
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-4 md:mb-6 px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-navy mb-4 md:mb-6 px-4">
               Key Milestones
             </h2>
-            <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto"></div>
+            <div className="w-16 md:w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto"></div>
           </motion.div>
 
           <div className="max-w-4xl mx-auto">
@@ -415,12 +415,12 @@ export default function TeamsPage() {
                 viewport={{ once: true }}
                 className="relative pl-6 md:pl-8 pb-8 md:pb-12 border-l-2 border-blue-200 last:border-0 last:pb-0"
               >
-                <div className="absolute left-0 top-0 w-3 md:w-4 h-3 md:h-4 bg-blue-600 rounded-full -translate-x-[6px] md:-translate-x-[9px] ring-2 md:ring-4 ring-white"></div>
+                <div className="absolute left-0 top-0 w-3 md:w-4 h-3 md:h-4 bg-brand-navy-light rounded-full -translate-x-[6px] md:-translate-x-[9px] ring-2 md:ring-4 ring-white"></div>
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 md:p-6 rounded-xl hover:shadow-lg transition-shadow">
-                  <span className="text-blue-600 font-bold text-base md:text-lg">
+                  <span className="text-brand-navy-light font-bold text-base md:text-lg">
                     {milestone.year}
                   </span>
-                  <p className="text-slate-900 text-sm md:text-base lg:text-lg mt-2">
+                  <p className="text-brand-navy text-sm md:text-base lg:text-lg mt-2">
                     {milestone.event}
                   </p>
                 </div>
@@ -440,10 +440,10 @@ export default function TeamsPage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-6 md:mb-8 px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-brand-navy mb-6 md:mb-8 px-4">
               A Continuation, Not a Change
             </h2>
-            <div className="space-y-4 md:space-y-6 text-base md:text-lg text-slate-600 leading-relaxed px-4">
+            <div className="space-y-4 md:space-y-6 text-base md:text-lg text-brand-text leading-relaxed px-4">
               <p>
                 Today, Dana and Bruce's lifelong commitment to serving medical
                 professionals has evolved into a new mission — helping doctors
@@ -457,7 +457,7 @@ export default function TeamsPage() {
                 once gave their patients.
               </p>
               <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-4 md:p-8 rounded-2xl border border-emerald-200 my-6 md:my-8">
-                <p className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 mb-3 md:mb-4">
+                <p className="text-lg md:text-xl lg:text-2xl font-bold text-brand-navy mb-3 md:mb-4">
                   The transition from medicine to real estate wasn't a change in
                   purpose — it was a continuation of it.
                 </p>
@@ -471,7 +471,7 @@ export default function TeamsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-blue-700 via-cyan-700 to-blue-900 relative overflow-hidden border border-b">
+      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-brand-navy via-cyan-700 to-blue-900 relative overflow-hidden border border-b">
         <div className="absolute inset-0">
           <div className="absolute top-10 md:top-20 right-10 md:right-20 w-48 md:w-96 h-48 md:h-96 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl"></div>
           <div className="absolute bottom-10 md:bottom-20 left-10 md:left-20 w-48 md:w-96 h-48 md:h-96 bg-cyan-400/20 rounded-full mix-blend-overlay filter blur-3xl"></div>
@@ -507,7 +507,7 @@ export default function TeamsPage() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
-                className="bg-white text-blue-700 hover:bg-blue-50 text-base md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full font-bold shadow-2xl hover:shadow-white/20 transition-all duration-300 group"
+                className="bg-white text-brand-navy-light hover:bg-blue-50 text-base md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full font-bold shadow-2xl hover:shadow-white/20 transition-all duration-300 group"
               >
                 Join The Investor List
                 <ArrowRight className="ml-2 w-4 md:w-5 h-4 md:h-5 group-hover:translate-x-1 transition-transform" />

@@ -59,10 +59,10 @@ export function CaseStudies() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#0a2540] mb-4">
+          <h2 className="text-4xl font-bold text-brand-navy mb-4">
             Track Record & Case Studies
           </h2>
-          <p className="text-lg text-[#425466] max-w-2xl mx-auto">
+          <p className="text-lg text-brand-text max-w-2xl mx-auto">
             Real results from our investment strategy, with key learnings from each project.
           </p>
         </motion.div>
@@ -80,29 +80,29 @@ export function CaseStudies() {
                 <CardHeader className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-[#0a2540] mb-1">
+                      <h3 className="text-xl font-bold text-brand-navy mb-1">
                         {study.title}
                       </h3>
-                      <p className="text-[#1a5490]">{study.plan}</p>
+                      <p className="text-brand-navy-light">{study.plan}</p>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-[#425466]">
+                    <div className="flex items-center gap-2 text-sm text-brand-text">
                       <Clock className="h-4 w-4" />
                       {study.holdPeriod}
                     </div>
                   </div>
                   
                   <div className="grid grid-cols-3 gap-4 mb-6">
-                    <div className="text-center p-3 bg-[#f8fafb] rounded-lg">
-                      <div className="text-sm text-[#425466] mb-1">CoC</div>
-                      <div className="font-bold text-[#1a5490]">{study.coc}</div>
+                    <div className="text-center p-3 bg-brand-bg rounded-lg">
+                      <div className="text-sm text-brand-text mb-1">CoC</div>
+                      <div className="font-bold text-brand-navy-light">{study.coc}</div>
                     </div>
-                    <div className="text-center p-3 bg-[#f8fafb] rounded-lg">
-                      <div className="text-sm text-[#425466] mb-1">Multiple</div>
-                      <div className="font-bold text-[#1a5490]">{study.equityMultiple}</div>
+                    <div className="text-center p-3 bg-brand-bg rounded-lg">
+                      <div className="text-sm text-brand-text mb-1">Multiple</div>
+                      <div className="font-bold text-brand-navy-light">{study.equityMultiple}</div>
                     </div>
-                    <div className="text-center p-3 bg-[#f8fafb] rounded-lg">
-                      <div className="text-sm text-[#425466] mb-1">IRR</div>
-                      <div className="font-bold text-[#1a5490]">{study.irr}</div>
+                    <div className="text-center p-3 bg-brand-bg rounded-lg">
+                      <div className="text-sm text-brand-text mb-1">IRR</div>
+                      <div className="font-bold text-brand-navy-light">{study.irr}</div>
                     </div>
                   </div>
                 </CardHeader>
@@ -110,13 +110,13 @@ export function CaseStudies() {
                 <CardContent className="p-6 pt-0">
                   <div className="mb-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <TrendingUp className="h-5 w-5 text-[#1a5490]" />
-                      <h4 className="font-semibold text-[#0a2540]">Key Actions</h4>
+                      <TrendingUp className="h-5 w-5 text-brand-navy-light" />
+                      <h4 className="font-semibold text-brand-navy">Key Actions</h4>
                     </div>
                     <ul className="space-y-2">
                       {study.keyActions.map((action, i) => (
-                        <li key={i} className="flex items-start gap-2 text-[#425466]">
-                          <div className="h-1.5 w-1.5 rounded-full bg-[#1a5490] mt-2" />
+                        <li key={i} className="flex items-start gap-2 text-brand-text">
+                          <div className="h-1.5 w-1.5 rounded-full bg-brand-navy-light mt-2" />
                           {action}
                         </li>
                       ))}
@@ -125,10 +125,10 @@ export function CaseStudies() {
                   
                   <div>
                     <div className="flex items-center gap-2 mb-3">
-                      <LightbulbIcon className="h-5 w-5 text-[#1a5490]" />
-                      <h4 className="font-semibold text-[#0a2540]">What We Learned</h4>
+                      <LightbulbIcon className="h-5 w-5 text-brand-navy-light" />
+                      <h4 className="font-semibold text-brand-navy">What We Learned</h4>
                     </div>
-                    <p className="text-[#425466]">{study.learnings}</p>
+                    <p className="text-brand-text">{study.learnings}</p>
                   </div>
                 </CardContent>
               </Card>

@@ -26,7 +26,7 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#f8fafb] border border-b">
+    <section className="py-20 bg-brand-bg border border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,10 +35,10 @@ export const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0a2540]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-brand-navy">
             What Medical Professionals Say
           </h2>
-          <p className="text-xl text-[#425466]">
+          <p className="text-xl text-brand-text">
             Real investors. No compensation for testimonials.
           </p>
         </motion.div>
@@ -54,8 +54,8 @@ export const Testimonials = () => {
             >
               <Card className="h-full hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-6">
-                  <Quote className="h-10 w-10 text-[#1a5490] mb-4 opacity-30" />
-                  <p className="text-[#425466] mb-6 italic">
+                  <Quote className="h-10 w-10 text-brand-navy-light mb-4 opacity-30" />
+                  <p className="text-brand-text mb-6 italic">
                     {testimonial.text}
                   </p>
                   <div className="flex items-center gap-4">
@@ -63,10 +63,10 @@ export const Testimonials = () => {
                       <AvatarFallback>{testimonial.initials}</AvatarFallback>
                     </Avatar>
                     <div>
-                      <div className="font-bold text-[#0a2540]">
+                      <div className="font-bold text-brand-navy">
                         {testimonial.author}
                       </div>
-                      <div className="text-sm text-[#425466]">
+                      <div className="text-sm text-brand-text">
                         {testimonial.title}
                       </div>
                     </div>

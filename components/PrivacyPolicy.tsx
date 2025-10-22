@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
   const sections = [
     {
       title: "Information We Collect",
-      icon: <UserCheck className="h-6 w-6 text-blue-600" />,
+      icon: <UserCheck className="h-6 w-6 text-brand-navy-light" />,
       content: [
         {
           subtitle: "Personal Data",
@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
     },
     {
       title: "How We Use Your Information",
-      icon: <Eye className="h-6 w-6 text-blue-600" />,
+      icon: <Eye className="h-6 w-6 text-brand-navy-light" />,
       content: [
         {
           subtitle: "",
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
     },
     {
       title: "Sharing Your Information",
-      icon: <Lock className="h-6 w-6 text-blue-600" />,
+      icon: <Lock className="h-6 w-6 text-brand-navy-light" />,
       content: [
         {
           subtitle: "",
@@ -115,7 +115,7 @@ export default function PrivacyPolicyPage() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 pt-14">
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden border-b">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-600 to-blue-800 opacity-95"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy-light via-brand-navy to-cyan-700 opacity-95"></div>
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-96 h-96 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-400/20 rounded-full mix-blend-overlay filter blur-3xl"></div>
@@ -166,15 +166,15 @@ export default function PrivacyPolicyPage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <Card className="border-blue-200 shadow-lg">
+            <Card className="border-brand-navy-light/20 shadow-lg">
               <CardContent className="p-8">
-                <p className="text-slate-600 leading-relaxed mb-4">
+                <p className="text-brand-text leading-relaxed mb-4">
                   This Privacy Policy describes Our policies and procedures on
                   the collection, use and disclosure of Your information when
                   You use the Service and tells You about Your privacy rights
                   and how the law protects You.
                 </p>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-brand-text leading-relaxed">
                   We use Your Personal data to provide and improve the Service.
                   By using the Service, You agree to the collection and use of
                   information in accordance with this Privacy Policy.
@@ -195,12 +195,12 @@ export default function PrivacyPolicyPage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
+            <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">
               Key Definitions
             </h2>
             <Card>
               <CardContent className="p-8">
-                <div className="space-y-4 text-slate-600">
+                <div className="space-y-4 text-brand-text">
                   <p>
                     <strong>Account:</strong> A unique account created for You
                     to access our Service.
@@ -225,7 +225,7 @@ export default function PrivacyPolicyPage() {
                     from{" "}
                     <Link
                       href="https://nextavest.com"
-                      className="text-blue-600 hover:underline"
+                      className="text-brand-navy-light hover:underline"
                     >
                       https://nextavest.com
                     </Link>
@@ -255,26 +255,26 @@ export default function PrivacyPolicyPage() {
                       <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
                         {section.icon}
                       </div>
-                      <h3 className="text-2xl font-bold text-slate-900 mt-2">
+                      <h3 className="text-2xl font-bold text-brand-navy mt-2">
                         {section.title}
                       </h3>
                     </div>
                     {section.content.map((item, i) => (
                       <div key={i} className="mb-4 last:mb-0">
                         {item.subtitle && (
-                          <h4 className="text-lg font-semibold text-slate-900 mb-2">
+                          <h4 className="text-lg font-semibold text-brand-navy mb-2">
                             {item.subtitle}
                           </h4>
                         )}
-                        <p className="text-slate-600 leading-relaxed mb-3">
+                        <p className="text-brand-text leading-relaxed mb-3">
                           {item.text}
                         </p>
                         {item.list && (
                           <ul className="space-y-2 ml-4">
                             {item.list.map((listItem, j) => (
                               <li key={j} className="flex items-start gap-3">
-                                <span className="text-blue-600 mt-1">•</span>
-                                <span className="text-slate-600">
+                                <span className="text-brand-navy-light mt-1">•</span>
+                                <span className="text-brand-text">
                                   {listItem}
                                 </span>
                               </li>
@@ -301,12 +301,12 @@ export default function PrivacyPolicyPage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
+            <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">
               Tracking Technologies and Cookies
             </h2>
             <Card className="mb-8">
               <CardContent className="p-8">
-                <p className="text-slate-600 leading-relaxed mb-6">
+                <p className="text-brand-text leading-relaxed mb-6">
                   We use Cookies and similar tracking technologies to track
                   activity on Our Service and store certain information.
                   Tracking technologies include beacons, tags, and scripts to
@@ -319,13 +319,13 @@ export default function PrivacyPolicyPage() {
                       key={index}
                       className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl"
                     >
-                      <h4 className="text-lg font-bold text-slate-900 mb-2">
+                      <h4 className="text-lg font-bold text-brand-navy mb-2">
                         {cookie.type}
                       </h4>
-                      <p className="text-sm text-blue-600 mb-3">
+                      <p className="text-sm text-brand-navy-light mb-3">
                         Type: {cookie.category}
                       </p>
-                      <p className="text-slate-700">{cookie.purpose}</p>
+                      <p className="text-brand-text">{cookie.purpose}</p>
                     </div>
                   ))}
                 </div>
@@ -345,22 +345,22 @@ export default function PrivacyPolicyPage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
+            <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">
               SMS Communications
             </h2>
 
-            <Card className="mb-8 bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
+            <Card className="mb-8 bg-gradient-to-br from-blue-50 to-cyan-50 border-brand-navy-light/20">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">
+                <h3 className="text-xl font-bold text-brand-navy mb-4">
                   SMS Consent
                 </h3>
-                <p className="text-slate-700 leading-relaxed mb-4">
+                <p className="text-brand-text leading-relaxed mb-4">
                   SMS consent and phone numbers will not be shared with third
                   parties or affiliates for marketing purposes. Mobile
                   information will not be shared with third parties/affiliates
                   for marketing/promotional purposes.
                 </p>
-                <p className="text-slate-700 leading-relaxed italic text-sm">
+                <p className="text-brand-text leading-relaxed italic text-sm">
                   All the above categories exclude text messaging originator
                   opt-in data and consent; this information will not be shared
                   with or obtained from any third parties.
@@ -379,10 +379,10 @@ export default function PrivacyPolicyPage() {
                 >
                   <Card className="h-full">
                     <CardContent className="p-6">
-                      <h4 className="text-lg font-bold text-slate-900 mb-3">
+                      <h4 className="text-lg font-bold text-brand-navy mb-3">
                         {term.title}
                       </h4>
-                      <p className="text-slate-600 text-sm leading-relaxed">
+                      <p className="text-brand-text text-sm leading-relaxed">
                         {term.content}
                       </p>
                     </CardContent>
@@ -405,10 +405,10 @@ export default function PrivacyPolicyPage() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Data Retention
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     The Company will retain Your Personal Data only for as long
                     as is necessary for the purposes set out in this Privacy
                     Policy. We will retain and use Your Personal Data to comply
@@ -426,16 +426,16 @@ export default function PrivacyPolicyPage() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Your Rights
                   </h3>
-                  <p className="text-slate-600 leading-relaxed mb-4">
+                  <p className="text-brand-text leading-relaxed mb-4">
                     You have the right to delete or request that We assist in
                     deleting the Personal Data that We have collected about You.
                     You may update, amend, or delete Your information at any
                     time by contacting Us.
                   </p>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     Please note that We may need to retain certain information
                     when we have a legal obligation or lawful basis to do so.
                   </p>
@@ -450,10 +450,10 @@ export default function PrivacyPolicyPage() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Security
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     The security of Your Personal Data is important to Us, but
                     remember that no method of transmission over the Internet,
                     or method of electronic storage is 100% secure. While We
@@ -471,10 +471,10 @@ export default function PrivacyPolicyPage() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Children's Privacy
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     Our Service does not address anyone under the age of 13. We
                     do not knowingly collect personally identifiable information
                     from anyone under the age of 13. If You are a parent or
@@ -492,10 +492,10 @@ export default function PrivacyPolicyPage() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Changes to This Policy
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     We may update Our Privacy Policy from time to time. We will
                     notify You of any changes by posting the new Privacy Policy
                     on this page and updating the "Last updated" date. You are

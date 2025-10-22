@@ -5,7 +5,7 @@ import { TrustedBy } from "./TrustBar";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="rounded-2xl flex flex-col antialiased items-center justify-center relative overflow-hidden bg-gradient-to-r from-[#0a2540] via-[#1a5490] to-[#0a2540] py-12">
+    <div className="rounded-2xl flex flex-col antialiased items-center justify-center relative overflow-hidden bg-gradient-to-r from-brand-navy via-brand-navy-light to-brand-navy py-12">
       <p className="text-center text-sm font-semibold text-white mb-8">
         Trusted by leading healthcare organizations
       </p>

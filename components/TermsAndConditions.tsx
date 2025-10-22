@@ -85,7 +85,7 @@ export default function TermsAndConditions() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 pt-14">
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden border-b">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-600 to-blue-800 opacity-95"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy-light via-brand-navy to-cyan-700 opacity-95"></div>
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-96 h-96 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-400/20 rounded-full mix-blend-overlay filter blur-3xl"></div>
@@ -127,17 +127,17 @@ export default function TermsAndConditions() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <Card className="border-blue-200 shadow-lg">
+            <Card className="border-brand-navy-light/20 shadow-lg">
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Shield className="h-6 w-6 text-blue-600" />
+                    <Shield className="h-6 w-6 text-brand-navy-light" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                    <h2 className="text-2xl font-bold text-brand-navy mb-4">
                       Welcome to NextaVest!
                     </h2>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-brand-text leading-relaxed">
                       By accessing or using our website ("Site") and services,
                       you agree to comply with and be bound by these Terms and
                       Conditions. Please read them carefully.
@@ -164,10 +164,10 @@ export default function TermsAndConditions() {
               >
                 <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                    <h3 className="text-2xl font-bold text-brand-navy mb-4">
                       {section.title}
                     </h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-brand-text leading-relaxed">
                       {section.content}
                     </p>
                   </CardContent>
@@ -193,21 +193,21 @@ export default function TermsAndConditions() {
                 <div className="flex items-start gap-4 mb-6">
                   <AlertCircle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                    <h3 className="text-2xl font-bold text-brand-navy mb-4">
                       User Conduct
                     </h3>
-                    <p className="text-slate-700 mb-4">
+                    <p className="text-brand-text mb-4">
                       When using our Site, you agree not to:
                     </p>
                     <ul className="space-y-2">
                       {userConduct.map((item, index) => (
                         <li key={index} className="flex items-start gap-3">
                           <span className="text-amber-600 mt-1">•</span>
-                          <span className="text-slate-700">{item}</span>
+                          <span className="text-brand-text">{item}</span>
                         </li>
                       ))}
                     </ul>
-                    <p className="text-slate-700 mt-4">
+                    <p className="text-brand-text mt-4">
                       NextaVest reserves the right to restrict or terminate your
                       access if you violate these terms.
                     </p>
@@ -230,10 +230,10 @@ export default function TermsAndConditions() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Limitation of Liability
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     To the maximum extent permitted by law, NextaVest is not
                     liable for any direct, indirect, incidental, or
                     consequential damages arising from your use of our Site or
@@ -251,10 +251,10 @@ export default function TermsAndConditions() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Indemnification
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     You agree to indemnify and hold harmless NextaVest, its
                     employees, agents, and affiliates, from any claims, losses,
                     damages, liabilities, costs, or expenses arising from your
@@ -272,14 +272,14 @@ export default function TermsAndConditions() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Privacy
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     Your use of our Site is also governed by our{" "}
                     <Link
                       href="/privacy"
-                      className="text-blue-600 hover:underline"
+                      className="text-brand-navy-light hover:underline"
                     >
                       Privacy Policy
                     </Link>
@@ -298,10 +298,10 @@ export default function TermsAndConditions() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Changes to Terms
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     NextaVest may update these Terms and Conditions
                     periodically. Changes will be effective immediately upon
                     posting on our Site. We encourage you to review these terms
@@ -318,10 +318,10 @@ export default function TermsAndConditions() {
             >
               <Card>
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     Governing Law
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     These Terms and Conditions are governed by the laws of the
                     United States of America. Any disputes arising from your use
                     of our Site or services will be resolved in the courts of
@@ -344,38 +344,38 @@ export default function TermsAndConditions() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
+            <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">
               SMS Terms of Service
             </h2>
 
-            <Card className="mb-8 bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
+            <Card className="mb-8 bg-gradient-to-br from-blue-50 to-cyan-50 border-brand-navy-light/20">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">
+                <h3 className="text-xl font-bold text-brand-navy mb-4">
                   SMS Consent
                 </h3>
-                <p className="text-slate-700 leading-relaxed mb-4">
+                <p className="text-brand-text leading-relaxed mb-4">
                   By opting into SMS from a web form, you are agreeing to
                   receive SMS messages from NextaVest. This includes SMS
                   messages for appointment scheduling, appointment reminders,
                   post-visit instructions, lab notifications, and billing
                   notifications.
                 </p>
-                <p className="text-slate-700 leading-relaxed mb-4">
+                <p className="text-brand-text leading-relaxed mb-4">
                   Message frequency varies. Message and data rates may apply.
                   See privacy policy at{" "}
                   <Link
                     href="/privacy"
-                    className="text-blue-600 hover:underline"
+                    className="text-brand-navy-light hover:underline"
                   >
                     https://nextavest.com/privacy
                   </Link>
                   .
                 </p>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-brand-text leading-relaxed">
                   Message HELP for help. Reply STOP to any message to opt out.
                 </p>
                 <div className="mt-4 p-4 bg-white rounded-lg">
-                  <p className="text-sm text-slate-600 italic">
+                  <p className="text-sm text-brand-text italic">
                     Note: SMS consent and phone numbers will not be shared with
                     third parties or affiliates for marketing purposes.
                   </p>
@@ -394,10 +394,10 @@ export default function TermsAndConditions() {
                 >
                   <Card className="h-full">
                     <CardContent className="p-6">
-                      <h4 className="text-lg font-bold text-slate-900 mb-3">
+                      <h4 className="text-lg font-bold text-brand-navy mb-3">
                         {message.title}
                       </h4>
-                      <p className="text-slate-600 text-sm leading-relaxed">
+                      <p className="text-brand-text text-sm leading-relaxed">
                         {message.content}
                       </p>
                     </CardContent>
@@ -408,16 +408,16 @@ export default function TermsAndConditions() {
 
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">
+                <h3 className="text-xl font-bold text-brand-navy mb-4">
                   Message Frequency & Rates
                 </h3>
-                <p className="text-slate-600 leading-relaxed mb-4">
+                <p className="text-brand-text leading-relaxed mb-4">
                   <strong>Message Frequency:</strong> When you opt in, you will
                   receive one SMS upon submitting your information on our
                   website. Variable frequency thereafter based on your
                   interactions.
                 </p>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-brand-text leading-relaxed">
                   <strong>Message and Data Rates:</strong> Please be aware that
                   message and data rates may apply to any SMS messages sent or
                   received. The rates are determined by your carrier and the
@@ -432,7 +432,7 @@ export default function TermsAndConditions() {
       {/* Last Updated */}
       <section className="py-8 bg-slate-100 border-b">
         <div className="container mx-auto px-4 lg:px-8">
-          <p className="text-center text-slate-600 text-sm">
+          <p className="text-center text-brand-text text-sm">
             Last Updated:{" "}
             {new Date().toLocaleDateString("en-US", {
               year: "numeric",

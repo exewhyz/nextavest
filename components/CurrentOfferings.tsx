@@ -31,7 +31,7 @@ export function CurrentOfferings() {
   const hasLiveOfferings = liveOfferings.length > 0;
 
   return (
-    <section className="py-24 bg-[#f8fafb]">
+    <section className="py-24 bg-brand-bg">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,10 +40,10 @@ export function CurrentOfferings() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#0a2540] mb-4">
+          <h2 className="text-4xl font-bold text-brand-navy mb-4">
             Current Investment Opportunities
           </h2>
-          <p className="text-lg text-[#425466] max-w-2xl mx-auto">
+          <p className="text-lg text-brand-text max-w-2xl mx-auto">
             SEC-qualified investment opportunities, exclusively for accredited
             investors.
           </p>
@@ -63,9 +63,9 @@ export function CurrentOfferings() {
                   <CardHeader className="p-0">
                     <div className="relative h-48 w-full">
                       {/* Replace with your actual image */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0a2540]/50 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/50 to-transparent" />
                       <div className="absolute bottom-4 left-4 right-4">
-                        <span className="bg-white/90 text-[#0a2540] text-sm font-semibold px-3 py-1 rounded-full">
+                        <span className="bg-white/90 text-brand-navy text-sm font-semibold px-3 py-1 rounded-full">
                           Limited Availability
                         </span>
                       </div>
@@ -73,12 +73,12 @@ export function CurrentOfferings() {
                   </CardHeader>
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <Lock className="h-4 w-4 text-[#1a5490]" />
-                      <span className="text-sm text-[#425466]">
+                      <Lock className="h-4 w-4 text-brand-navy-light" />
+                      <span className="text-sm text-brand-text">
                         Accredited Investors Only
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold text-[#0a2540] mb-2">
+                    <h3 className="text-xl font-bold text-brand-navy mb-2">
                       {offering.title}
                     </h3>
                     <Button className="w-full mt-4">
@@ -99,15 +99,15 @@ export function CurrentOfferings() {
           >
             <Card className="bg-white border-dashed">
               <CardContent className="p-12">
-                <h3 className="text-2xl font-bold text-[#0a2540] mb-4">
+                <h3 className="text-2xl font-bold text-brand-navy mb-4">
                   Between Acquisitions
                 </h3>
-                <p className="text-[#425466] mb-6">
+                <p className="text-brand-text mb-6">
                   We're currently evaluating new opportunities that meet our
                   strict investment criteria. Join our investor list to be the
                   first to know when our next offering becomes available.
                 </p>
-                <Button size="lg" className="bg-[#1a5490] hover:bg-[#144171]">
+                <Button size="lg" className="bg-brand-navy-light hover:bg-brand-navy">
                   Join The Investor List
                 </Button>
               </CardContent>

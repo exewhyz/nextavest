@@ -62,14 +62,14 @@ export default function AboutPage() {
               transition={{ delay: 0.2, type: "spring" }}
               className="inline-block mb-6"
             >
-              <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
+              <div className="bg-gradient-to-r from-brand-navy-light to-cyan-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
                 Our Story
               </div>
             </motion.div>
-            <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent mb-6">
+            <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-brand-navy via-brand-navy to-brand-navy bg-clip-text text-transparent mb-6">
               Our History
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed">
+            <p className="text-xl text-brand-text leading-relaxed">
               CrowdVest LLC and NextAvest bring a wealth of experience in the
               real estate and property investment sectors. Our commitment to
               identifying and providing secure, growth-oriented investment
@@ -108,15 +108,15 @@ export default function AboutPage() {
               viewport={{ once: true }}
             >
               <div className="inline-block mb-4">
-                <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase">
+                <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase">
                   What Drives Us
                 </span>
               </div>
-              <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+              <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
                 Our Mission
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mb-6"></div>
-              <p className="text-xl text-slate-600 leading-relaxed">
+              <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mb-6"></div>
+              <p className="text-xl text-brand-text leading-relaxed">
                 To provide high-value property investments with a focus on
                 transparency, innovation, and long-term financial growth for our
                 clients.
@@ -136,13 +136,13 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+            <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
               Core Principles
             </span>
-            <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
               Our Values
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto"></div>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -162,10 +162,10 @@ export default function AboutPage() {
                   >
                     {value.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
                     {value.title}
                   </h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-brand-text leading-relaxed">
                     {value.description}
                   </p>
                   <div
@@ -191,15 +191,15 @@ export default function AboutPage() {
               className="order-2 md:order-1"
             >
               <div className="inline-block mb-4">
-                <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase">
+                <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase">
                   Our Future
                 </span>
               </div>
-              <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+              <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
                 Our Vision
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mb-6"></div>
-              <p className="text-xl text-slate-600 leading-relaxed">
+              <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mb-6"></div>
+              <p className="text-xl text-brand-text leading-relaxed">
                 To be leaders in the real estate investment sector, offering
                 opportunities that combine innovative strategies with the
                 potential for above-market returns.
@@ -237,14 +237,14 @@ export default function AboutPage() {
             className="max-w-4xl mx-auto"
           >
             <div className="text-center mb-16">
-              <span className="text-blue-600 font-semibold text-sm tracking-wider uppercase mb-4 block">
+              <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
                 Our Purpose
               </span>
-              <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+              <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
                 Why NextaVest Exists
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8"></div>
-              <p className="text-2xl text-slate-700 font-semibold">
+              <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-8"></div>
+              <p className="text-2xl text-brand-text font-semibold">
                 NextaVest was built for medical professionals seeking
                 predictable cash flow.
               </p>
@@ -256,7 +256,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-lg text-slate-600 leading-relaxed"
+                className="text-lg text-brand-text leading-relaxed"
               >
                 When we sold our laboratory, we had worked with over 10,000
                 doctors under Meridian Health. What we saw again and again was
@@ -270,11 +270,11 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 className="relative overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 opacity-5"></div>
-                <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl border-l-4 border-blue-600 shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-navy-light to-cyan-600 opacity-5"></div>
+                <div className="relative bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl border-l-4 border-brand-navy-light shadow-lg">
                   <div className="flex items-start gap-4">
-                    <ArrowRight className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
-                    <p className="text-xl font-semibold text-slate-900">
+                    <ArrowRight className="w-8 h-8 text-brand-navy-light flex-shrink-0 mt-1" />
+                    <p className="text-xl font-semibold text-brand-navy">
                       After retirement or selling their practice, income
                       stopped.
                     </p>
@@ -287,7 +287,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
                 viewport={{ once: true }}
-                className="text-lg text-slate-600 leading-relaxed"
+                className="text-lg text-brand-text leading-relaxed"
               >
                 That's when it clicked for us. Physicians, who spent their
                 careers serving patients, were left without reliable income
@@ -301,7 +301,7 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 className="bg-gradient-to-br from-emerald-50 to-teal-50 p-8 rounded-2xl border border-emerald-200"
               >
-                <p className="text-lg text-slate-700 leading-relaxed font-medium">
+                <p className="text-lg text-brand-text leading-relaxed font-medium">
                   Now, through NextaVest, we're helping doctors turn their
                   hard-earned capital into quarterly or monthly distributions —
                   often making{" "}
@@ -318,7 +318,7 @@ export default function AboutPage() {
 
       {/* CTA Section with Gradient Background */}
       <section className="py-32 relative overflow-hidden border border-b">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-700"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy-light via-brand-navy to-cyan-700"></div>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-300 rounded-full mix-blend-overlay filter blur-3xl animate-pulse delay-1000"></div>
@@ -355,7 +355,7 @@ export default function AboutPage() {
               <Button
                 size="lg"
                 asChild
-                className="bg-white text-blue-700 hover:bg-blue-50 text-lg px-10 py-7 rounded-full font-bold shadow-2xl hover:shadow-white/20 transition-all duration-300 group"
+                className="bg-white text-brand-navy-light hover:bg-blue-50 text-lg px-10 py-7 rounded-full font-bold shadow-2xl hover:shadow-white/20 transition-all duration-300 group"
               >
                 <Link href="/contact">
                   Join The Investor List

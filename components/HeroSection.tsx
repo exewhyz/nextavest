@@ -47,7 +47,7 @@ export function HeroSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <motion.h1
-              className="text-4xl font-bold tracking-tight text-[#0a2540] sm:text-6xl"
+              className="text-4xl font-bold tracking-tight text-brand-navy sm:text-6xl"
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -75,7 +75,7 @@ export function HeroSection() {
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                <Button size="lg" className="bg-[#1a5490] hover:bg-[#144171]">
+                <Button size="lg" className="bg-brand-navy-light hover:bg-brand-navy">
                   <Link href="/contact">Join The Physician Investor List</Link>
                 </Button>
               </motion.div>
@@ -87,7 +87,7 @@ export function HeroSection() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-[#1a5490] text-[#1a5490] hover:bg-slate-100"
+                  className="border-brand-navy-light text-brand-navy-light hover:bg-slate-100"
                 >
                   <Link href="/contact">Request Consultation →</Link>
                 </Button>

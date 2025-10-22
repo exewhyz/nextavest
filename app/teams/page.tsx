@@ -3,16 +3,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import {
-  Heart,
-  Target,
-  Users,
-  Building2,
-  Award,
-  TrendingUp,
-  ArrowRight,
-  Sparkles,
-} from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -96,44 +87,8 @@ export default function TeamsPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
-      {/* Hero Section */}
-      {/* <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy-light via-cyan-600 to-blue-800 opacity-95"></div>
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-10 md:top-20 -right-10 md:right-20 w-48 md:w-96 h-48 md:h-96 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl"></div>
-          <div className="absolute -bottom-10 md:bottom-20 -left-10 md:left-20 w-48 md:w-96 h-48 md:h-96 bg-cyan-400/20 rounded-full mix-blend-overlay filter blur-3xl"></div>
-        </div>
-
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 overflow-hidden">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: "spring" }}
-              className="inline-block mb-4 md:mb-6"
-            >
-              <div className="bg-white/20 backdrop-blur-sm text-white px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold">
-                Meet Our Founders
-              </div>
-            </motion.div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight break-words">
-              From Medicine to Meaningful Investing
-            </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto">
-              A lifelong commitment to serving medical professionals, now
-              helping them achieve financial independence
-            </p>
-          </motion.div>
-        </div>
-      </section> */}
-
       {/* Origin Story Section */}
-      <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden border border-b">
+      <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
             <motion.div
@@ -192,7 +147,7 @@ export default function TeamsPage() {
       </section>
 
       {/* The Problem Section */}
-      <section className="pt-16 md:pt-24 lg:pt-32 bg-white border border-b pb-24">
+      <section className="pt-16 md:pt-24 lg:pt-32 bg-white border-b pb-24">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -258,7 +213,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Founders Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border border-b">
+      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -323,7 +278,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Team Members Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white border border-b">
+      <section className="py-16 md:py-24 lg:py-32 bg-white border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -387,7 +342,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border border-b">
+      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -431,7 +386,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Mission Continuation Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white border border-b">
+      <section className="py-16 md:py-24 lg:py-32 bg-white border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -471,7 +426,7 @@ export default function TeamsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-brand-navy via-cyan-700 to-blue-900 relative overflow-hidden border border-b">
+      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-brand-navy-light via-brand-navy to-cyan-700 relative overflow-hidden border-b">
         <div className="absolute inset-0">
           <div className="absolute top-10 md:top-20 right-10 md:right-20 w-48 md:w-96 h-48 md:h-96 bg-white/10 rounded-full mix-blend-overlay filter blur-3xl"></div>
           <div className="absolute bottom-10 md:bottom-20 left-10 md:left-20 w-48 md:w-96 h-48 md:h-96 bg-cyan-400/20 rounded-full mix-blend-overlay filter blur-3xl"></div>

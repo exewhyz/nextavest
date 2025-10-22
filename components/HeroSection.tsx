@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 
 export function HeroSection() {
   return (
-    <section className="relative isolate pt-14 lg:px-8 overflow-hidden border border-b">
+    <section className="relative isolate pt-14 lg:px-8 overflow-hidden border-b">
       {/* Darker gradient background for better contrast */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-slate-50 to-blue-50"></div>
 

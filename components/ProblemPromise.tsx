@@ -4,78 +4,8 @@ import { Button } from "./ui/button";
 // import { DollarSign, Shield, Building2, Monitor } from "lucide-react";
 
 export const ProblemPromise = () => {
-  //   const promises = [
-  //     {
-  //       icon: DollarSign,
-  //       title: "Passive Cash Flow",
-  //       description:
-  //         "Professionally managed assets delivering quarterly distributions without your active involvement",
-  //     },
-  //     {
-  //       icon: Shield,
-  //       title: "Tax Advantages",
-  //       description:
-  //         "Benefit from bonus depreciation, cost segregation studies, and strategic tax planning",
-  //     },
-  //     {
-  //       icon: Building2,
-  //       title: "Direct Ownership",
-  //       description:
-  //         "Deal-by-deal investments in single-asset LLCs—no blind funds or REITs",
-  //     },
-  //     {
-  //       icon: Monitor,
-  //       title: "Transparent Updates",
-  //       description:
-  //         "Secure investor portal with quarterly reports and on-time K-1s",
-  //     },
-  //   ];
-
   return (
-    // <section className="py-20 bg-white">
-    //   <div className="container mx-auto px-4 lg:px-8">
-    //     <motion.div
-    //       initial={{ opacity: 0, y: 20 }}
-    //       whileInView={{ opacity: 1, y: 0 }}
-    //       transition={{ duration: 0.6 }}
-    //       viewport={{ once: true }}
-    //       className="text-center mb-12"
-    //     >
-    //       <h2 className="text-4xl md:text-5xl font-bold mb-4 text-brand-navy">
-    //         Built for Your Medical Career
-    //       </h2>
-    //       <p className="text-xl text-brand-text max-w-3xl mx-auto">
-    //         We understand the unique challenges physicians face: limited time,
-    //         high taxes, burnout, and volatile markets
-    //       </p>
-    //     </motion.div>
-
-    //     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    //       {promises.map((promise, i) => (
-    //         <motion.div
-    //           key={promise.title}
-    //           initial={{ opacity: 0, y: 20 }}
-    //           whileInView={{ opacity: 1, y: 0 }}
-    //           transition={{ delay: i * 0.1 }}
-    //           viewport={{ once: true }}
-    //         >
-    //           <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-gray-100">
-    //             <CardHeader>
-    //               <div className="w-12 h-12 bg-[#e6f0fa] rounded-lg flex items-center justify-center mb-4">
-    //                 <promise.icon className="h-6 w-6 text-brand-navy-light" />
-    //               </div>
-    //               <CardTitle>{promise.title}</CardTitle>
-    //             </CardHeader>
-    //             <CardContent>
-    //               <p className="text-brand-text">{promise.description}</p>
-    //             </CardContent>
-    //           </Card>
-    //         </motion.div>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </section>
-    <section className="flex flex-col gap-8 container mx-auto px-4 lg:px-8 py-20 border border-b">
+    <section className="flex flex-col gap-8 container mx-auto px-4 lg:px-8 py-20 border-b">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

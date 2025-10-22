@@ -1,16 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   Shield,
   TrendingUp,
   Lightbulb,
-  Users,
-  Building,
   ArrowRight,
-  Target,
   Sparkles,
 } from "lucide-react";
 import Link from "next/link";
@@ -42,7 +38,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50">
       {/* Hero Section with Gradient */}
-      <section className="relative py-32 overflow-hidden border border-b">
+      <section className="relative py-32 overflow-hidden border-b">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50"></div>
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -81,7 +77,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section with Card Design */}
-      <section className="py-32 relative border border-b">
+      <section className="py-32 relative border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             <motion.div
@@ -127,7 +123,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section with Modern Cards */}
-      <section className="py-32 bg-gradient-to-b from-white to-slate-50 border border-b">
+      <section className="py-32 bg-gradient-to-b from-white to-slate-50 border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -179,7 +175,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision Section */}
-      <section className="py-32 relative overflow-hidden border border-b">
+      <section className="py-32 relative overflow-hidden border-b">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-blue-50"></div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
@@ -227,7 +223,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why We Exist Section with Highlight */}
-      <section className="py-32 bg-white border border-b">
+      <section className="py-32 bg-white border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -317,7 +313,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section with Gradient Background */}
-      <section className="py-32 relative overflow-hidden border border-b">
+      <section className="py-32 relative overflow-hidden border-b">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-navy-light via-brand-navy to-cyan-700"></div>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse"></div>

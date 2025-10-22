@@ -71,7 +71,7 @@ function ForPhysicians() {
   ];
 
   return (
-    <section className="relative py-32 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white border border-b">
+    <section className="relative py-32 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white border-b">
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 right-20 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
         <div
@@ -243,7 +243,7 @@ function HowItWorksDetailed() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-slate-50 border border-b">
+    <section className="py-32 bg-gradient-to-b from-white to-slate-50 border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -381,7 +381,7 @@ function DealCriteriaAndRisk() {
   ];
 
   return (
-    <section className="py-32 bg-white border border-b">
+    <section className="py-32 bg-white border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -477,7 +477,7 @@ function CurrentOfferings() {
   const hasLiveOfferings = liveOfferings.length > 0;
 
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-50 to-white border border-b">
+    <section className="py-32 bg-gradient-to-b from-slate-50 to-white border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -599,7 +599,7 @@ function CaseStudies() {
   ];
 
   return (
-    <section className="py-32 bg-white border border-b">
+    <section className="py-32 bg-white border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -785,7 +785,7 @@ function EducationHub() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-50 to-white border border-b">
+    <section className="py-32 bg-gradient-to-b from-slate-50 to-white border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -943,7 +943,7 @@ function AboutFamily() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-slate-50 border border-b">
+    <section className="py-32 bg-gradient-to-b from-white to-slate-50 border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -1083,7 +1083,7 @@ function FAQSection() {
   ];
 
   return (
-    <section className="py-32 bg-white border border-b">
+    <section className="py-32 bg-white border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">

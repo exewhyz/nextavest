@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
       icon: <Eye className="h-6 w-6 text-blue-600" />,
       content: [
         {
-          subtitle:"",
+          subtitle: "",
           text: "The Company may use Personal Data for the following purposes:",
           list: [
             "To provide and maintain our Service",
@@ -59,7 +59,7 @@ export default function PrivacyPolicyPage() {
       icon: <Lock className="h-6 w-6 text-blue-600" />,
       content: [
         {
-          subtitle:"",
+          subtitle: "",
           text: "We do not sell or rent your personal information to third parties. However, we may share your information with:",
           list: [
             "Service Providers: Trusted third parties that help us operate our business",
@@ -141,7 +141,12 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <p className="text-xl text-blue-100 leading-relaxed mb-4">
-              Last updated: January 27, 2025
+              Last Updated:{" "}
+              {new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
             </p>
             <p className="text-lg text-blue-200">
               Your privacy is important to us. This policy explains how we
@@ -501,69 +506,6 @@ export default function PrivacyPolicyPage() {
               </Card>
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-slate-50 border-b">
-        <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <Card className="bg-gradient-to-br from-blue-600 to-cyan-600 text-white">
-              <CardContent className="p-8">
-                <h2 className="text-3xl font-bold mb-6 text-center">
-                  Contact Us
-                </h2>
-                <p className="text-blue-100 mb-8 text-center leading-relaxed">
-                  If you have any questions about this Privacy Policy, you can
-                  contact us:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-3">
-                      <Mail className="h-6 w-6" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Email</h4>
-                    <a
-                      href="mailto:info@nectavest.com"
-                      className="text-blue-100 hover:text-white transition-colors"
-                    >
-                      info@nectavest.com
-                    </a>
-                  </div>
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-3">
-                      <Phone className="h-6 w-6" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Phone</h4>
-                    <a
-                      href="tel:5162173673"
-                      className="text-blue-100 hover:text-white transition-colors"
-                    >
-                      1 (516) 217-3673
-                    </a>
-                  </div>
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-3">
-                      <ExternalLink className="h-6 w-6" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Website</h4>
-                    <Link
-                      href="/contact"
-                      className="text-blue-100 hover:text-white transition-colors"
-                    >
-                      Visit Contact Page
-                    </Link>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
         </div>
       </section>
     </main>

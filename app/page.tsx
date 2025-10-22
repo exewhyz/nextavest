@@ -2,14 +2,6 @@
 
 import { motion } from "motion/react";
 import {
-  // ArrowRight,
-  // DollarSign,
-  // Shield,
-  // Building2,
-  // Monitor,
-  // FileCheck,
-  // Search,
-  // PenTool,
   Download,
   Eye,
   CheckCircle2,
@@ -27,84 +19,6 @@ import { Card } from "@/components/ui/card";
 import Properties from "@/components/Properties";
 import Link from "next/link";
 
-// How It Works Section
-// const HowItWorks = () => {
-//   const steps = [
-//     {
-//       icon: FileCheck,
-//       number: "01",
-//       title: "Apply & Verify",
-//       description:
-//         "Complete accreditation verification and set your investment goals in our secure portal",
-//     },
-//     {
-//       icon: Search,
-//       number: "02",
-//       title: "Review Deals",
-//       description:
-//         "Receive concise, physician-friendly investment briefs and join optional webinars",
-//     },
-//     {
-//       icon: PenTool,
-//       number: "03",
-//       title: "Invest & Earn",
-//       description:
-//         "E-sign documents, fund your investment, and start receiving quarterly distributions",
-//     },
-//   ];
-
-//   return (
-//     <section className="py-20 bg-[#f8fafb]">
-//       <div className="container mx-auto px-4 lg:px-8">
-//         <motion.div
-//           initial={{ opacity: 0, y: 20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.6 }}
-//           viewport={{ once: true }}
-//           className="text-center mb-16"
-//         >
-//           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0a2540]">
-//             How It Works — Simple, Transparent
-//           </h2>
-//           <p className="text-xl text-[#425466]">
-//             Get started in minutes, not months
-//           </p>
-//         </motion.div>
-
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative max-w-5xl mx-auto">
-//           <div className="hidden md:block absolute top-24 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-[#1a5490] via-[#4a9eff] to-[#1a5490]" />
-
-//           {steps.map((step, i) => (
-//             <motion.div
-//               key={step.title}
-//               initial={{ opacity: 0, y: 20 }}
-//               whileInView={{ opacity: 1, y: 0 }}
-//               transition={{ delay: i * 0.2 }}
-//               viewport={{ once: true }}
-//               className="text-center relative"
-//             >
-//               <div className="relative z-10">
-//                 <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-[#1a5490] to-[#4a9eff] rounded-full flex items-center justify-center shadow-lg">
-//                   <span className="text-3xl font-bold text-white">
-//                     {step.number}
-//                   </span>
-//                 </div>
-//                 <h3 className="text-2xl font-bold mb-4 text-[#0a2540]">
-//                   {step.title}
-//                 </h3>
-//                 <p className="text-[#425466] max-w-sm mx-auto">
-//                   {step.description}
-//                 </p>
-//               </div>
-//             </motion.div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// Featured Offering Section
 const FeaturedOffering = () => {
   const metrics = [
     { value: "8.5%", label: "Target Cash-on-Cash" },

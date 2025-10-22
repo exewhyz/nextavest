@@ -429,68 +429,6 @@ export default function TermsAndConditions() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-b from-slate-50 to-white border-b">
-        <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <Card className="bg-gradient-to-br from-blue-600 to-cyan-600 text-white">
-              <CardContent className="p-8">
-                <h2 className="text-3xl font-bold mb-6 text-center">
-                  Contact Us
-                </h2>
-                <p className="text-blue-100 mb-8 text-center leading-relaxed">
-                  If you have any questions, concerns, or requests regarding
-                  these Terms and Conditions, please contact us:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-3">
-                      <Mail className="h-6 w-6" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Email</h4>
-                    <a
-                      href="mailto:info@nextavest.com"
-                      className="text-blue-100 hover:text-white transition-colors"
-                    >
-                      info@nextavest.com
-                    </a>
-                  </div>
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-3">
-                      <Phone className="h-6 w-6" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Phone</h4>
-                    <a
-                      href="tel:5162173673"
-                      className="text-blue-100 hover:text-white transition-colors"
-                    >
-                      1 (516) 217-3673
-                    </a>
-                  </div>
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-3">
-                      <MapPin className="h-6 w-6" />
-                    </div>
-                    <h4 className="font-semibold mb-2">Address</h4>
-                    <p className="text-blue-100">
-                      490 Wheeler Rd. Suite 251
-                      <br />
-                      Hauppauge, NY 11788
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Last Updated */}
       <section className="py-8 bg-slate-100 border-b">
         <div className="container mx-auto px-4 lg:px-8">

@@ -5,79 +5,101 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   Shield,
   FileText,
-  AlertCircle,
-  Phone,
+  Building2,
   Mail,
-  MapPin,
 } from "lucide-react";
-import Link from "next/link";
 
 export default function TermsAndConditions() {
   const sections = [
     {
-      title: "Acceptance of Terms",
+      title: "1. Introduction",
       content:
-        "By using our Site or purchasing our insurance services, you confirm your acceptance of these Terms and Conditions, which govern your use of our Site. If you do not agree to these terms, please refrain from using our services.",
+        'Welcome to Nextavest ("Nextavest," "we," "our," or "us"). These Terms & Conditions ("Terms") constitute a legally binding agreement between you ("User," "Investor," or "Client") and Nextavest regarding your access to and use of our website, digital platform, and related services (collectively, the "Services"). By accessing, browsing, or using our Services, you acknowledge that you have read, understood, and agreed to be bound by these Terms and all applicable laws and regulations. If you do not agree with any of these Terms, you must immediately discontinue the use of our Services.',
     },
     {
-      title: "Eligibility",
+      title: "2. About Nextavest",
       content:
-        "You must be at least 18 years old and capable of entering into a binding contract to use our Site and services. By using our Site, you represent and warrant that you meet these eligibility requirements.",
+        "Nextavest is a commercial real estate investment firm focused on delivering exceptional value to our investors through strategic, data-driven, and relationship-centered investments. We leverage decades of industry experience, creative investment structuring, and a network of institutional and private partners to identify high-return opportunities designed to exceed our clients' goals. Our mission is to align capital with opportunity — driving consistent performance, risk-adjusted returns, and long-term wealth creation through disciplined real estate investment practices.",
     },
     {
-      title: "Insurance Services",
+      title: "3. Scope of the Terms",
       content:
-        "NextaVest offers various insurance policies, including Life, Car, Home, Travel, Business, Land, Marriage, and Health Insurance. Insurance services are provided in accordance with the policies agreed upon between NextaVest and our clients. Please review all policy documents carefully as they govern the terms, coverage, exclusions, and limitations of each insurance product.",
+        "These Terms apply to all users who visit or interact with our website or platform, including individuals who: Access information about our investment offerings; Engage with our communications, newsletters, or educational materials; or Participate in private placements, managed funds, or other investment structures sponsored by Nextavest. Specific investment opportunities may be subject to additional offering documents, subscription agreements, or regulatory disclosures. In the event of a conflict between these Terms and any such documents, the terms of the investment-specific documentation shall prevail.",
     },
     {
-      title: "Quotation and Application",
+      title: "4. Eligibility and Representation",
       content:
-        "Quotes provided on our Site are estimates based on the information provided by the user. Final rates and terms may vary based on underwriting criteria and the accuracy of the information submitted. Submission of an application does not guarantee approval for insurance coverage.",
+        'By using our Services, you represent and warrant that: You are at least 18 years of age and legally capable of entering into a binding agreement. You will comply with all applicable securities and investment laws. You will provide accurate, current, and complete information when registering or engaging with our Services. You will not use our Services for any unlawful purpose or in violation of these Terms. Certain investment offerings may be restricted to "accredited investors" or "qualified purchasers" as defined under the U.S. Securities Act of 1933, as amended, and other applicable securities laws. It is your responsibility to verify your eligibility prior to participating in any offering.',
     },
     {
-      title: "Premium Payments",
+      title: "5. Nature of Information Provided",
       content:
-        "Premium payments are required to maintain active coverage. If you miss a payment, your coverage may be suspended or canceled in accordance with the terms specified in your policy document. All premium payments must be made in a timely manner to avoid interruption in your coverage.",
+        "All content and materials provided through our website, publications, or communications are intended solely for informational and educational purposes. Nothing contained on the Nextavest platform constitutes: Investment advice, An offer to sell or a solicitation of an offer to buy any securities, or A recommendation regarding any specific investment or strategy. Any investment-related information made available through the Services is qualified in its entirety by the relevant private placement memorandum, offering circular, or subscription documents applicable to the specific offering. Nextavest assumes no responsibility for the completeness, accuracy, or timeliness of the information presented. You are encouraged to consult with your own independent financial, legal, or tax advisor before making any investment decision.",
     },
     {
-      title: "Cancellation and Refunds",
+      title: "6. Investment Risk Disclosure",
       content:
-        "You may cancel your policy by contacting us at the details provided below. Refunds, if applicable, will be processed as per the policy terms. Please review your specific policy for information regarding cancellation fees and refund eligibility.",
+        "Investing in real estate and related securities involves substantial risks. Such risks may include, but are not limited to: Illiquidity of private investments; Market volatility; Changes in interest rates, inflation, or economic cycles; Tenant defaults, environmental liabilities, or unforeseen operating expenses; Legislative and regulatory changes affecting real estate values or tax treatment. Past performance is not indicative of future results. There can be no assurance that any investment strategy or opportunity offered by Nextavest will achieve its stated objectives or projected returns. You should invest only if you can afford to lose the entire amount invested.",
     },
     {
-      title: "Claims Processes",
+      title: "7. No Fiduciary Relationship",
       content:
-        "Our claims process is designed to be efficient and supportive. To file a claim, log in to your account on our Site or contact our claims team. Claims are subject to review and approval based on the terms and conditions of your specific policy. Additional documentation may be required to process claims.",
+        "Use of the Nextavest platform or receipt of communications from us does not create any fiduciary, advisory, or agency relationship between you and Nextavest. Nextavest acts solely as a sponsor or manager of investment opportunities and does not assume any duty to act in your best interests beyond the obligations expressly stated in applicable offering documents or agreements.",
     },
     {
-      title: "Intellectual Property",
+      title: "8. Use of the Website and Platform",
       content:
-        "All content on our Site, including but not limited to text, graphics, logos, images, and software, is the property of NextaVest or its licensors and is protected by intellectual property laws. Unauthorized use of our content is strictly prohibited.",
-    },
-  ];
-
-  const userConduct = [
-    "Violate any applicable laws or regulations",
-    "Engage in fraudulent, misleading, or unethical conduct",
-    "Interfere with or disrupt the functionality of our Site",
-    "Upload or transmit viruses, malware, or harmful software",
-  ];
-
-  const smsMessages = [
-    {
-      title: "Opt-in",
-      content:
-        'Thank you for opting into SMS messages from NextaVest. To opt-out at any time reply "STOP". Messages and data rates may apply. Message frequency may vary.',
+        "You agree to use the Nextavest website and Services only for lawful purposes and in a manner consistent with these Terms. You shall not: Engage in activities that disrupt or damage the platform or servers; Attempt to gain unauthorized access to secure areas or systems; Post or transmit false, misleading, or fraudulent information; Copy, reproduce, or distribute proprietary materials without authorization. Nextavest reserves the right to suspend or terminate access to any user who violates these Terms or engages in conduct deemed detrimental to the integrity of the platform or community.",
     },
     {
-      title: "Opt-out",
+      title: "9. Intellectual Property Rights",
       content:
-        'Thank you for opting out of SMS messages from NextaVest. You will not receive further SMS communication. To opt back in, reply "START".',
+        "All trademarks, logos, graphics, text, data, and software on the Nextavest website are the intellectual property of Nextavest or its licensors and are protected under applicable intellectual property laws. You are granted a limited, non-exclusive, non-transferable, and revocable license to access and use the Services for personal or informational purposes only. You may not modify, reproduce, or commercially exploit any materials without our prior written consent.",
     },
     {
-      title: "Help",
+      title: "10. Confidentiality and Privacy",
       content:
-        "Thank you for contacting NextaVest. We will get in touch with you soon to help you. For immediate assistance please contact us via (516) 217-3673 or visit our contact page.",
+        "Nextavest respects your right to privacy and is committed to protecting personal and financial information in accordance with our Privacy Policy. By using our Services, you consent to the collection, processing, and storage of your information as described therein. Any confidential or proprietary information shared between you and Nextavest shall be used solely for the purpose for which it was provided and shall not be disclosed to third parties except as required by law or regulation.",
+    },
+    {
+      title: "11. Third-Party Links and Content",
+      content:
+        "The Nextavest website may contain references or links to third-party websites, data sources, or services. These links are provided for convenience only and do not imply endorsement or control by Nextavest. We assume no responsibility for the accuracy, availability, or content of third-party websites, nor for any damages arising from their use.",
+    },
+    {
+      title: "12. Limitation of Liability",
+      content:
+        "To the fullest extent permitted by applicable law, Nextavest, its officers, directors, affiliates, employees, and agents shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from: Your access to or use of the Services; Reliance on any content or materials provided through the platform; Errors, omissions, or delays in information transmission; or Unauthorized access or alteration of data. In no event shall the total liability of Nextavest exceed the amount paid by you, if any, for accessing the Services.",
+    },
+    {
+      title: "13. Indemnification",
+      content:
+        "You agree to indemnify, defend, and hold harmless Nextavest, its affiliates, and its respective officers, directors, and employees from any and all claims, damages, liabilities, and expenses (including reasonable legal fees) arising from: Your breach of these Terms; Your use or misuse of the Services; or Your violation of any applicable law or the rights of any third party.",
+    },
+    {
+      title: "14. Amendments and Modifications",
+      content:
+        "Nextavest reserves the right to modify, amend, or update these Terms at any time without prior notice. Revised Terms will be posted on our website and become effective immediately upon posting. Your continued use of the Services after such changes constitutes acceptance of the updated Terms.",
+    },
+    {
+      title: "15. Termination",
+      content:
+        "We may suspend or terminate your access to the Services at our sole discretion, without prior notice, if we believe you have violated these Terms or engaged in any conduct that may harm our reputation, operations, or users. Upon termination, all licenses granted under these Terms shall immediately cease, and you must discontinue use of all Nextavest materials and content.",
+    },
+    {
+      title: "16. Governing Law and Jurisdiction",
+      content:
+        "These Terms shall be governed by and construed in accordance with the laws of the State in which Nextavest maintains its principal place of business, without regard to conflict-of-law principles. Any disputes arising out of or relating to these Terms shall be resolved through confidential arbitration or mediation in accordance with applicable arbitration laws.",
+    },
+    {
+      title: "17. Severability",
+      content:
+        "If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect, and the invalid portion shall be modified to the minimum extent necessary to make it enforceable.",
+    },
+    {
+      title: "18. Entire Agreement",
+      content:
+        "These Terms, together with our Privacy Policy and any applicable offering or subscription agreements, constitute the entire agreement between you and Nextavest regarding your use of our Services and supersede all prior understandings or communications.",
     },
   ];
 
@@ -129,18 +151,16 @@ export default function TermsAndConditions() {
           >
             <Card className="border-brand-navy-light/20 shadow-lg">
               <CardContent className="p-8">
-                <div className="flex items-start gap-4 mb-6">
+                <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Shield className="h-6 w-6 text-brand-navy-light" />
+                    <Building2 className="h-6 w-6 text-brand-navy-light" />
                   </div>
                   <div>
                     <h2 className="text-2xl font-bold text-brand-navy mb-4">
-                      Welcome to NextaVest!
+                      Commercial Real Estate Investment
                     </h2>
                     <p className="text-brand-text leading-relaxed">
-                      By accessing or using our website ("Site") and services,
-                      you agree to comply with and be bound by these Terms and
-                      Conditions. Please read them carefully.
+                      Nextavest is committed to delivering exceptional value through strategic, data-driven, and relationship-centered real estate investments. Please review these terms carefully as they govern your use of our platform and services.
                     </p>
                   </div>
                 </div>
@@ -153,21 +173,21 @@ export default function TermsAndConditions() {
       {/* Main Terms Sections */}
       <section className="py-20 bg-slate-50 border-b">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-4xl mx-auto space-y-6">
             {sections.map((section, index) => (
               <motion.div
                 key={section.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: Math.min(index * 0.05, 0.5) }}
                 viewport={{ once: true }}
               >
                 <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-brand-navy mb-4">
+                    <h3 className="text-xl font-bold text-brand-navy mb-4">
                       {section.title}
                     </h3>
-                    <p className="text-brand-text leading-relaxed">
+                    <p className="text-brand-text leading-relaxed whitespace-pre-line">
                       {section.content}
                     </p>
                   </CardContent>
@@ -178,7 +198,7 @@ export default function TermsAndConditions() {
         </div>
       </section>
 
-      {/* User Conduct Section */}
+      {/* Contact Section */}
       <section className="py-20 bg-white border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
@@ -188,241 +208,28 @@ export default function TermsAndConditions() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <Card className="bg-gradient-to-br from-amber-50 to-orange-50 border-amber-200">
+            <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-brand-navy-light/20">
               <CardContent className="p-8">
-                <div className="flex items-start gap-4 mb-6">
-                  <AlertCircle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-1" />
+                <div className="flex items-start gap-4">
+                  <Shield className="h-6 w-6 text-brand-navy-light flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-2xl font-bold text-brand-navy mb-4">
-                      User Conduct
+                      19. Contact Information
                     </h3>
-                    <p className="text-brand-text mb-4">
-                      When using our Site, you agree not to:
+                    <p className="text-brand-text leading-relaxed mb-4">
+                      For inquiries, clarifications, or requests related to these Terms, please contact:
                     </p>
-                    <ul className="space-y-2">
-                      {userConduct.map((item, index) => (
-                        <li key={index} className="flex items-start gap-3">
-                          <span className="text-amber-600 mt-1">•</span>
-                          <span className="text-brand-text">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="text-brand-text mt-4">
-                      NextaVest reserves the right to restrict or terminate your
-                      access if you violate these terms.
-                    </p>
+                    <div className="flex items-center gap-3 bg-white p-4 rounded-lg">
+                      <Mail className="h-5 w-5 text-brand-navy-light" />
+                      <a
+                        href="mailto:invest@nextavest.com"
+                        className="text-brand-navy-light hover:underline font-semibold"
+                      >
+                        invest@nextavest.com
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Additional Terms */}
-      <section className="py-20 bg-slate-50 border-b">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
-                    Limitation of Liability
-                  </h3>
-                  <p className="text-brand-text leading-relaxed">
-                    To the maximum extent permitted by law, NextaVest is not
-                    liable for any direct, indirect, incidental, or
-                    consequential damages arising from your use of our Site or
-                    services. We strive to ensure accuracy but do not warrant
-                    that the information on our Site is error-free or complete.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
-                    Indemnification
-                  </h3>
-                  <p className="text-brand-text leading-relaxed">
-                    You agree to indemnify and hold harmless NextaVest, its
-                    employees, agents, and affiliates, from any claims, losses,
-                    damages, liabilities, costs, or expenses arising from your
-                    breach of these Terms and Conditions or your use of our Site
-                    and services.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
-                    Privacy
-                  </h3>
-                  <p className="text-brand-text leading-relaxed">
-                    Your use of our Site is also governed by our{" "}
-                    <Link
-                      href="/privacy"
-                      className="text-brand-navy-light hover:underline"
-                    >
-                      Privacy Policy
-                    </Link>
-                    , which outlines how we collect, use, and protect your
-                    information. Please review our Privacy Policy to understand
-                    your rights and obligations.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
-                    Changes to Terms
-                  </h3>
-                  <p className="text-brand-text leading-relaxed">
-                    NextaVest may update these Terms and Conditions
-                    periodically. Changes will be effective immediately upon
-                    posting on our Site. We encourage you to review these terms
-                    regularly to stay informed of any updates.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-brand-navy mb-4">
-                    Governing Law
-                  </h3>
-                  <p className="text-brand-text leading-relaxed">
-                    These Terms and Conditions are governed by the laws of the
-                    United States of America. Any disputes arising from your use
-                    of our Site or services will be resolved in the courts of
-                    the United States of America.
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* SMS Terms Section */}
-      <section className="py-20 bg-white border-b">
-        <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">
-              SMS Terms of Service
-            </h2>
-
-            <Card className="mb-8 bg-gradient-to-br from-blue-50 to-cyan-50 border-brand-navy-light/20">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-brand-navy mb-4">
-                  SMS Consent
-                </h3>
-                <p className="text-brand-text leading-relaxed mb-4">
-                  By opting into SMS from a web form, you are agreeing to
-                  receive SMS messages from NextaVest. This includes SMS
-                  messages for appointment scheduling, appointment reminders,
-                  post-visit instructions, lab notifications, and billing
-                  notifications.
-                </p>
-                <p className="text-brand-text leading-relaxed mb-4">
-                  Message frequency varies. Message and data rates may apply.
-                  See privacy policy at{" "}
-                  <Link
-                    href="/privacy"
-                    className="text-brand-navy-light hover:underline"
-                  >
-                    https://nextavest.com/privacy
-                  </Link>
-                  .
-                </p>
-                <p className="text-brand-text leading-relaxed">
-                  Message HELP for help. Reply STOP to any message to opt out.
-                </p>
-                <div className="mt-4 p-4 bg-white rounded-lg">
-                  <p className="text-sm text-brand-text italic">
-                    Note: SMS consent and phone numbers will not be shared with
-                    third parties or affiliates for marketing purposes.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              {smsMessages.map((message, index) => (
-                <motion.div
-                  key={message.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <Card className="h-full">
-                    <CardContent className="p-6">
-                      <h4 className="text-lg font-bold text-brand-navy mb-3">
-                        {message.title}
-                      </h4>
-                      <p className="text-brand-text text-sm leading-relaxed">
-                        {message.content}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-brand-navy mb-4">
-                  Message Frequency & Rates
-                </h3>
-                <p className="text-brand-text leading-relaxed mb-4">
-                  <strong>Message Frequency:</strong> When you opt in, you will
-                  receive one SMS upon submitting your information on our
-                  website. Variable frequency thereafter based on your
-                  interactions.
-                </p>
-                <p className="text-brand-text leading-relaxed">
-                  <strong>Message and Data Rates:</strong> Please be aware that
-                  message and data rates may apply to any SMS messages sent or
-                  received. The rates are determined by your carrier and the
-                  specifics of your mobile plan.
-                </p>
               </CardContent>
             </Card>
           </motion.div>

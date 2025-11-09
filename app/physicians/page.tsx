@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-/* Lines 2-36 omitted */
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -11,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
 import {
   BarChart3,
   Calculator,
@@ -243,7 +244,7 @@ function HowItWorksDetailed() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-slate-50 border-b">
+    <section className="py-32 bg-gradient-to-br from-slate-100 to-blue-100 border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -477,7 +478,7 @@ function CurrentOfferings() {
   const hasLiveOfferings = liveOfferings.length > 0;
 
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-50 to-white border-b">
+    <section className="py-32 bg-gradient-to-br from-slate-100 to-blue-100 border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -785,7 +786,7 @@ function EducationHub() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-50 to-white border-b">
+    <section className="py-32 bg-gradient-to-br from-slate-100 to-blue-100 border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
           <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
@@ -802,7 +803,7 @@ function EducationHub() {
         </div>
 
         <Tabs defaultValue="guides" className="max-w-6xl mx-auto">
-          <TabsList className="grid w-full grid-cols-3 mb-12 bg-slate-100 p-1 rounded-xl">
+          <TabsList className="grid w-full grid-cols-3 mb-12 bg-slate-100 p-1 rounded-xl border">
             <TabsTrigger
               value="guides"
               className="flex items-center gap-2 data-[state=active]:bg-white data-[state=active]:shadow-md rounded-lg"
@@ -1021,101 +1022,6 @@ function AboutFamily() {
               </div>
             );
           })}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// FAQSection Component
-function FAQSection() {
-  const faqs = [
-    {
-      question: "Do I need to be accredited?",
-      answer:
-        "Yes, all investors must qualify as accredited investors as defined by SEC regulations. We'll help verify your status during the onboarding process.",
-    },
-    {
-      question: "What is the minimum investment?",
-      answer:
-        "Our typical minimum investment is $50,000 per property, though this may vary by opportunity. We structure our investments to be accessible while ensuring meaningful returns.",
-    },
-    {
-      question: "What are the target cash-on-cash returns and hold periods?",
-      answer:
-        "We target properties that can deliver 6-8% annual cash-on-cash returns, with typical hold periods of 5-7 years. Each opportunity has its own specific targets which we clearly outline.",
-    },
-    {
-      question: "How often are distributions made?",
-      answer:
-        "We typically distribute cash flow quarterly, with some properties offering monthly distributions. The specific schedule is detailed in each investment's operating agreement.",
-    },
-    {
-      question: "How will this affect my taxes? When will I receive a K-1?",
-      answer:
-        "You'll receive a Schedule K-1 annually, typically by March 15th. Our investments often provide tax advantages through depreciation. We recommend consulting your tax advisor for specific guidance.",
-    },
-    {
-      question: "Can I invest via IRA/solo-401k or through my practice entity?",
-      answer:
-        "Yes, we accept investments through self-directed IRAs, solo 401(k)s, and business entities. We can help coordinate with your custodian or provide guidance on structure.",
-    },
-    {
-      question: "What are the risks?",
-      answer:
-        "Real estate investments carry risks including potential loss of capital, market fluctuations, tenant defaults, and property-specific challenges. We detail risks thoroughly in our offering documents and focus on risk mitigation strategies.",
-    },
-    {
-      question: "What fees do you charge?",
-      answer:
-        "Our fee structure typically includes an asset management fee and a performance fee aligned with investor returns. We provide full fee transparency in our offering documents.",
-    },
-    {
-      question: "How are you aligned with investors?",
-      answer:
-        "We co-invest alongside our investors in every deal, typically 5-10% of the equity. Our success is directly tied to investment performance.",
-    },
-    {
-      question: "What if I'm on call and can't attend a webinar?",
-      answer:
-        "All our webinars are recorded and available on-demand through our investor portal. We also offer one-on-one briefings at your convenience.",
-    },
-  ];
-
-  return (
-    <section className="py-32 bg-white border-b">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-20">
-          <span className="text-brand-navy-light font-semibold text-sm tracking-wider uppercase mb-4 block">
-            Got Questions?
-          </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-brand-navy mb-6">
-            Frequently Asked Questions
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-brand-navy-light to-cyan-600 mx-auto mb-6"></div>
-          <p className="text-xl text-brand-text max-w-2xl mx-auto">
-            Common questions from our physician investors. Don't see yours?
-            Contact us directly.
-          </p>
-        </div>
-
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="border-2 border-slate-200 rounded-2xl bg-white hover:border-blue-200 transition-colors duration-200 overflow-hidden"
-              >
-                <AccordionTrigger className="px-6 py-4 text-brand-navy hover:text-brand-navy-light text-left font-semibold text-lg hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6 text-brand-text leading-relaxed text-base">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
         </div>
       </div>
     </section>

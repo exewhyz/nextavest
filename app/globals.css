@@ -107,7 +107,7 @@
   --brand-cyan-light: oklch(0.7 0.162 223.235); /* #06b6d4 */
   --brand-success: oklch(0.643 0.169 160.588); /* #10b981 */
   --brand-text: oklch(0.485 0.015 251.456); /* #425466 */
-  --brand-bg: oklch(0.985 0.003 251.456); /* #f8fafb */
+  --brand-bg: oklch(97.941% 0.00143 285.209); /* #f8fafb */
 }
 
 .dark {

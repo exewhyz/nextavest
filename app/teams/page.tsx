@@ -147,7 +147,7 @@ export default function TeamsPage() {
       </section>
 
       {/* The Problem Section */}
-      <section className="pt-16 md:pt-24 lg:pt-32 bg-white border-b pb-24">
+      <section className="pt-16 md:pt-24 lg:pt-32 bg-gradient-to-br from-slate-100 to-blue-100 border-b pb-24">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -213,7 +213,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Founders Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border-b">
+      <section className="py-16 md:py-24 lg:py-32 border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -278,7 +278,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Team Members Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white border-b">
+      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-slate-100 to-blue-100 border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -342,7 +342,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border-b">
+      <section className="py-16 md:py-24 lg:py-32  border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -386,7 +386,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Mission Continuation Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white border-b">
+      <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-slate-100 to-blue-100 border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

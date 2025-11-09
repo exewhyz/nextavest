@@ -28,7 +28,7 @@ const FeaturedOffering = () => {
   ];
 
   return (
-    <section className="py-20 bg-brand-bg border-b">
+    <section className="py-20 bg-gradient-to-br from-slate-100 to-blue-100 border-b">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ const FeaturedOffering = () => {
                 {metrics.map((metric) => (
                   <div
                     key={metric.label}
-                    className="text-center p-4 bg-brand-bg rounded-lg"
+                    className="text-center p-4 bg-secondary rounded-lg"
                   >
                     <div className="text-3xl font-bold text-brand-navy-light mb-2">
                       {metric.value}
@@ -78,7 +78,7 @@ const FeaturedOffering = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="group">
+                <Button size="lg" className="group bg-brand-navy-light hover:bg-brand-navy">
                   <Eye className="mr-2 h-5 w-5" />
                   View Full Offering
                 </Button>

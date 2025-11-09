@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export const TrustBar = () => {
   return (
-    <section className="bg-brand-bg border-y border-gray-200 py-8">
+    <section className="bg-gradient-to-br from-slate-100 to-blue-100 border-y border-gray-200 py-8">
       <div className="container mx-auto px-4 lg:px-8 flex flex-col gap-8">
         <Stats />
       </div>

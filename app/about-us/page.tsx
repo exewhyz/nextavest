@@ -77,7 +77,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section with Card Design */}
-      <section className="py-32 relative border-b">
+      <section className="py-32 relative border-b bg-gradient-to-br from-slate-100 to-blue-100">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             <motion.div
@@ -90,9 +90,9 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-3xl transform rotate-3"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl transform -rotate-1 hover:rotate-0 transition-transform duration-300">
                 <img
-                  src="https://nextavest.com/wp-content/uploads/2024/11/world-dots.png"
-                  alt="Vision Illustration"
-                  className="w-full h-[400px] object-contain"
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+                  alt="Mission Illustration"
+                  className="w-full h-[400px] object-cover rounded-2xl"
                 />
               </div>
             </motion.div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section with Modern Cards */}
-      <section className="py-32 bg-gradient-to-b from-white to-slate-50 border-b">
+      <section className="py-32 bg-white border-b">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -175,8 +175,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision Section */}
-      <section className="py-32 relative overflow-hidden border-b">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-blue-50"></div>
+      <section className="py-32 relative overflow-hidden border-b bg-gradient-to-br from-slate-100 to-blue-100">
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             <motion.div
@@ -212,9 +211,9 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-l from-blue-100 to-cyan-100 rounded-3xl transform -rotate-3"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-300">
                 <img
-                  src="https://nextavest.com/wp-content/uploads/2024/11/Business_Development.png"
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop"
                   alt="Vision Illustration"
-                  className="w-full h-[400px] object-contain"
+                  className="w-full h-[400px] object-cover rounded-2xl"
                 />
               </div>
             </motion.div>
